@@ -1,0 +1,386 @@
+import random
+# import random
+#
+# m = int(input('m='))
+# n = int(input('n='))
+# maxv = float('-inf')
+# mas = []
+#
+# for qator in range(m):
+#     row = []
+#     for ustun in range(n):
+#         row.append(random.randint(10, 99))
+#     mas.append(row)
+# [print(row) for row in mas]
+# c = -1
+# for row in mas:
+#     c += 1
+#     d = -1
+#     for i in row:
+#         d += 1
+#         if i > maxv:
+#             maxv = i
+#             a = d
+#             b = c
+# print('row =', b, '; index =', a, '; maxv =', maxv)
+
+
+# matrix1
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(10*y)
+#     mas.append(row)
+# [print(row) for row in mas]
+
+# matrix2
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(5*x)
+#     mas.append(row)
+# [print(row) for row in mas]
+
+# matrix3
+# m = int(input('m='))
+# n = int(input('n='))
+# m_mas = [random.randint(0,99) for _ in range(m)]
+# mas = []
+# print('m_mas =', m_mas)
+# row = []
+# for y in range(m):
+#     row = [m_mas[y]]
+#     for x in range(1, n):
+#         row.append(m_mas[y])
+#     mas.append(row)
+# [print(row) for row in mas]
+
+# m = int(input('m='))
+# n = int(input('n='))
+# m_mas = [random.randint(0,99) for _ in range(m)]
+# mas = []
+# print('m_mas =', m_mas)
+# row = []
+# for y in range(m):
+#     mas.append(m_mas)
+# [print(row) for row in mas]
+
+# # matrix4
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+# m_mas = [random.randint(10,99) for _ in range(n)]
+# print("m_mas =", m_mas)
+# for y in range(m):
+#     row = [m_mas[y]]
+#     for x in range(1, n):
+#         row.append(m_mas[y])
+#     mas.append(row)
+# [print(row) for row in mas]
+
+# matrix5
+# m = int(input('m='))
+# n = int(input('n='))
+# d = int(input('d='))
+# b = d
+# d_mas = [int(input('a=')) for _ in range(m)]
+# print('d_mas =', d_mas)
+# mas = []
+#
+# for y in range(m):
+#     d = b
+#     row = [d_mas[y]]
+#     for x in range(1, n):
+#         row.append(d_mas[y] + d)
+#         d += b
+#     mas.append(row)
+# [print(row) for row in mas]
+
+
+# m = int(input('m='))
+# n = int(input('n='))
+# d = int(input('d='))
+#
+# d_mas = [random.randint(10, 99) for _ in range(m)]
+# print('d_mas =', d_mas)
+#
+# mas = [
+#     [d_mas[y] + d * x for x in range(n)]
+#     for y in range(m)
+# ]
+#
+# for row in mas:
+#     print(row)
+
+# matrix6
+
+# m = int(input('m='))
+# n = int(input('n='))
+# q = int(input('q='))
+# b = q
+# m_mas = [random.randint(10, 99) for _ in range(m)]
+# print('m_mas =', m_mas)
+# mas = []
+#
+# for y in range(m):
+#     q = b
+#     row = [m_mas[y]]
+#     for x in range(1, n):
+#         a = m_mas[y] * q
+#         row.append(a)
+#         m_mas[y] = a
+#     mas.append(row)
+# [print(row) for row in mas]
+
+# matrix7
+# m = int(input('m='))
+# n = int(input('n='))
+# k = int(input('k='))
+# mas = []
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(random.randint(10,99))
+#     if y == k:
+#         a = row
+#     mas.append(row)
+# print('a =', a)
+
+# matrix8
+# m = int(input('m='))
+# n = int(input('n='))
+# k = int(input('k='))
+# mas = []
+# b = []
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         a = random.randint(10,99)
+#         row.append(a)
+#         if x == k:
+#             b.append(a)
+#     mas.append(row)
+# [print(row) for row in mas]
+# print('b =', b)
+
+# matrix9
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(random.randint(10,99))
+#     mas.append(row)
+# [print(row) for row in mas]
+# print("**"*20)
+# for i in range(0, len(mas), 2):
+#     print(mas[i])
+
+# matrix10
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(random.randint(10,99))
+#     mas.append(row)
+# [print(row) for row in mas]
+# print("**"*20)
+# for i in range(1, len(mas), 2):
+#     print(mas[i])
+
+# matrix11
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(random.randint(10,99))
+#     mas.append(row)
+# [print(row) for row in mas]
+# print("**"*20)
+# q = 0
+# for i in range(m):
+#     if i%2==0:
+#         print(mas[i])
+#     elif i%2==1:
+#         mas[i].reverse()
+#         print(mas[i])
+
+# matrix12
+# m = int(input('m='))
+# n = int(input('n='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(n):
+#         row.append(random.randint(10, 99))
+#     mas.append(row)
+# [print(row) for row in mas]
+# for i in range(n):
+#     if i%2 == 0:
+#         for q in range(m):
+#             print(mas[q][i], end=' ')
+#     elif i%2 == 1:
+#         for q in range(m-1, -1, -1):
+#             print(mas[q][i], end=' ')
+
+# matrix13
+# m = int(input('m='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(m):
+#         row.append(random.randint(10, 50))
+#     mas.append(row)
+# [print(row) for row in mas]
+# print('**'*20)
+
+#
+# for y in range(m):
+#     for x in range(m-y):
+#         print(mas[y][x], end=', ')
+#     print('\t', end=' ')
+#     for x in range(y+1, m):
+#         print(mas[x][m-y-1], end=', ')
+#     print(f'{y=}')
+
+
+# m = M
+# i = m-1
+# j = 1
+# for w in range(m//2):
+#     for q in range(j, m):
+#         print(mas[q][i], end=', ')
+#     i -= 1; j += 1; m -= 1
+
+# j = 0
+# for i in range(m-1, -1, -1):
+#     for q in range(j, m):
+#         print(mas[i][q], end=', ')
+#     m -=1
+#     j += 1
+
+# i = 0
+# j = 1
+# for w in range(m//2):
+#     for q in range(j, m):
+#         print(mas[q][i], end=', ')
+#     i += 1; j += 1; m -= 1
+
+# matrix13**2
+
+# for y in range(m):
+#     for x in range(m-y-1):
+#         print(mas[x][m-y-1], end=' ')
+#     print('\t', end=', ')
+#     for x in range(m-y-1, -1, -1):
+#         print(mas[m-y-1][x], end=', ')
+#     print(f'{y=}')
+
+
+# martix13**3
+
+# for y in range(m):
+#     for x in range(m-y):
+#         print(mas[x][y], end=', ')
+#     print('\t', end=', ')
+#     for x in range(y, m-1):
+#         print(mas[m-y-1][x+1], end=', ')
+#     print(f'{y=}')
+
+# matrix13**4
+
+# for y in range(m):
+#     for x in range(m-1, y-1, -1):
+#         print(mas[y][x], end=', ')
+#     print('\t', end=' ')
+#     for x in range(y+1, m):
+#         print(mas[x][y], end=', ')
+#     print(f'{y=}')
+
+# matrix14
+#
+# m = int(input('m='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(m):
+#         row.append(random.randint(10, 50))
+#     mas.append(row)
+# [print(row) for row in mas]
+# print('**'*20)
+#
+# for y in range(m):
+#     for x in range(m-y):
+#         print(mas[x][y], end=', ')
+#     print('\t', end=', ')
+#     for x in range(y, m-1):
+#         print(mas[m-y-1][x+1], end=', ')
+#     print(f'{y=}')
+
+# /****************************************
+# m = int(input('m='))
+# mas = []
+#
+# for y in range(m):
+#     row = []
+#     for x in range(m):
+#         row.append(random.randint(10,99))
+#     mas.append(row)
+# [print(row) for row in mas]
+#
+# for y in range(m//2):
+#     for x in range(y, m-y-1):
+#         print(mas[y][x], end=', ')
+#     print('\t', end=' ')
+#     for x in range(y, m-y-1):
+#         print(mas[x][m-y-1], end=', ')
+#     print('\t', end=' ')
+#     for x in range(m-y-1, y, -1):
+#         print(mas[m-y-1][x], end=', ')
+#     print('\t', end=' ')
+#     for x in range(m-y-1, y, -1):
+#         print(mas[x][y], end=', ')
+#     print('\t', end=' ')
+# if m%2 == 1:
+#     print(mas[m//2][m//2])
+
+#
+# c = 1
+# for y in range(m//2):
+#     for x in range(y, m - y-1):
+#         mas[y][x] = c
+#         c += 1
+#     for x in range(y, m-y-1):
+#         mas[x][m-y-1] = c
+#         c += 1
+#     for x in range(m-y-1, y, -1):
+#         mas[m-y-1][x] = c
+#         c += 1
+#     for x in range(m-y-1, y, -1):
+#         mas[x][y] = c
+#         c += 1
+# if m%2==1:
+#     mas[m//2][m//2] = m**2
+# [print(row) for row in mas]
+
+
+# matrix16
+m = int(input('m='))
+mas = []
+
