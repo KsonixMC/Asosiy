@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bookman Old Style";
+}
+#btn{
+    padding:10px 20px;
+    border-radius: 50px;
+    border: 1px ;
+}
