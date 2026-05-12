@@ -454,7 +454,7 @@ print('**'*20)
 ##matrix20
 
 ##for y in range(n-1):
-##    S1 = 0; S2 = 1; Q = []
+##    S1 = 0; S2 = 1; Q = [] 
 ##    for x in range(m):
 ##        S1 += mas[x][y]
 ##        S2 *= mas[x][y]
@@ -464,29 +464,10 @@ print('**'*20)
 
 ##matrix21
 
-# for y in range(m):
-#     S = 0; Q = []
-#     for x in range(1, n, 2):
-#         S += mas[y][x]
-#         Q.append(mas[y][x])
-#     print(Q)
-#     print(S/(n//2))
-
-# matrix22
-# for y in range(n):
-#     S = 0; Q = []
-#     for x in range(0, m, 2):
-#         S += mas[x][y]
-#         Q.append(mas[x][y])
-#     print(Q)
-#     print(S)
-
-# matrix23
-# for y in range(m):
-#     minv = float('inf')
-#     for x in range(n):
-#         if minv > mas[y][x]:
-#             minv = mas[y][x]
-#     print(minv)
-
-# matrix24
+for y in range(m):
+    S = 0; Q = []
+    for x in range(1, n, 2):
+        S += mas[y][x]
+        Q.append(mas[y][x])
+    print(Q)
+    print(S/n)
