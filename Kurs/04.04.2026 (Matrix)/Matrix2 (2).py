@@ -490,3 +490,35 @@ print('**'*20)
 #     print(minv)
 
 # matrix24
+# for y in range(n):
+#     maxv = float('-inf')
+#     for x in range(m):
+#         if maxv < mas[x][y]:
+#             maxv = mas[x][y]
+#     print(maxv)
+
+# matrix25
+# maxv = float('-inf')
+# a = 0
+# for y in range(m):
+#     S = 0
+#     for x in range(n):
+#         S += mas[y][x]
+#     if maxv < S:
+#         maxv = S
+#         a = y
+# print(maxv, a)
+
+# matrix26
+
+minv = float('inf')
+a=0
+
+for y in range(n):
+    S = 1
+    for x in range(m):
+        S *= mas[y][x]
+    if minv > S:
+        minv = S
+        a = y
+print(minv, a)
