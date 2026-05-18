@@ -6,7 +6,7 @@ mas = []
 for y in range(m):
     row = []
     for x in range(n):
-        row.append(random.randint(1, 9))
+        row.append(random.randint(-9, 9))
     mas.append(row)
 [print(row) for row in mas]
 print('**'*20)
@@ -598,39 +598,52 @@ print('**'*20)
 
 ##matrix31
 
-q = []
-S = 0
+##q = []
+##S = 0
+##for y in range(m):
+##    s = 0
+##    for x in range(n):
+##        S += mas[y][x]
+##        s += mas[y][x]
+##    q.append(round(s/n, 1))
+##A = round(S/(m*n), 1)
+##print(q, A)
+##a = 0
+##minv = float('inf')
+##for i in range(m):
+##    if minv >= abs(A-q[i]):
+##        minv = abs(A-q[i])
+##        a = q[i]
+##        b = i
+##print(a, b)
+##q = []
+##S = 0
+##for y in range(n):
+##    s = 0
+##    for x in range(m):
+##        S += mas[x][y]
+##        s += mas[x][y]
+##    q.append(round(s/n, 1))
+##A = round(S/(m*n), 1)
+##print(q, A)
+##a = 0
+##minv = float('inf')
+##for i in range(n):
+##    if minv >= abs(A-q[i]):
+##        minv = abs(A-q[i])
+##        a = q[i]
+##        b = i
+##print(a, b)
+
+##matrix32
+
 for y in range(m):
-    s = 0
+    c1 = 0; c0 = 0
     for x in range(n):
-        S += mas[y][x]
-        s += mas[y][x]
-    q.append(round(s/n, 1))
-A = round(S/(m*n), 1)
-print(q, A)
-a = 0
-minv = float('inf')
+        if mas[y][x] < 0:
+            c1 += 1
+        elif mas[y][x] > 0:
+            c0 += 1
+    print(c0, c1)
 for i in range(m):
-    if minv >= abs(A-q[i]):
-        minv = abs(A-q[i])
-        a = q[i]
-        b = i
-print(a, b)
-q = []
-S = 0
-for y in range(n):
-    s = 0
-    for x in range(m):
-        S += mas[x][y]
-        s += mas[x][y]
-    q.append(round(s/n, 1))
-A = round(S/(m*n), 1)
-print(q, A)
-a = 0
-minv = float('inf')
-for i in range(n):
-    if minv >= abs(A-q[i]):
-        minv = abs(A-q[i])
-        a = q[i]
-        b = i
-print(a, b)
+    
