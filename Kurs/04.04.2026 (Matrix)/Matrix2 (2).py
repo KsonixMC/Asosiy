@@ -511,14 +511,126 @@ print('**'*20)
 
 # matrix26
 
-minv = float('inf')
-a=0
+##minv = float('inf')
+##a=0
+##
+##for y in range(n):
+##    S = 1
+##    for x in range(m):
+##        S *= mas[x][y]
+##    if minv > S:
+##        minv = S
+##        a = y
+##print(minv, a)
 
+
+##matrix27
+
+##minv = float('inf')
+##Q = []; a = 0
+##for y in range(m):
+##    S = 0
+##    for x in range(n):
+##        S += mas[y][x]
+##    if minv > S:
+##        minv = S
+##        a = y
+##Q.append(mas[a])
+##maxv = float('-inf')
+##for i in range(n):
+##    if maxv < Q[0][i]:
+##        maxv = Q[0][i]
+##print(Q)
+##print(maxv)
+##print(S)
+
+##matrix28
+
+##maxv = float('-inf')
+##a = 0; q1 = 0
+##for y in range(n):
+##    S = 0; q = []
+##    for x in range(m):
+##        S += mas[x][y]
+##        q.append(mas[x][y])
+##    if maxv < S:
+##        maxv = S
+##        a = y
+##        q1 = q
+##minv = float('inf')
+##for i in range(m):
+##    if minv > q1[i]:
+##        minv = q1[i]
+##print(q1)
+##print(minv)
+##print(maxv)
+
+##matrix29
+##q = []
+##for y in range(m):
+##    S = 0
+##    for x in range(n):
+##        S += mas[y][x]
+##    q.append(S/n)
+##print(q)
+##for y in range(m):
+##    q1 = []
+##    for x in range(n):
+##        if mas[y][x] < q[y]:
+##            q1.append(mas[y][x])
+##    print(q1)
+
+##matrix30
+
+##q = []
+##for y in range(n):
+##    s = 0
+##    for x in range(m):
+##        s += mas[x][y]
+##    q.append(s/m)
+##print(q)
+##for y in range(n):
+##    q1 = []
+##    for x in range(m):
+##        if mas[x][y] > q[y]:
+##            q1.append(mas[x][y])
+##    print(q1)
+
+##matrix31
+
+q = []
+S = 0
+for y in range(m):
+    s = 0
+    for x in range(n):
+        S += mas[y][x]
+        s += mas[y][x]
+    q.append(round(s/n, 1))
+A = round(S/(m*n), 1)
+print(q, A)
+a = 0
+minv = float('inf')
+for i in range(m):
+    if minv >= abs(A-q[i]):
+        minv = abs(A-q[i])
+        a = q[i]
+        b = i
+print(a, b)
+q = []
+S = 0
 for y in range(n):
-    S = 1
+    s = 0
     for x in range(m):
-        S *= mas[y][x]
-    if minv > S:
-        minv = S
-        a = y
-print(minv, a)
+        S += mas[x][y]
+        s += mas[x][y]
+    q.append(round(s/n, 1))
+A = round(S/(m*n), 1)
+print(q, A)
+a = 0
+minv = float('inf')
+for i in range(n):
+    if minv >= abs(A-q[i]):
+        minv = abs(A-q[i])
+        a = q[i]
+        b = i
+print(a, b)
