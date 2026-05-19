@@ -636,14 +636,44 @@ print('**'*20)
 ##print(a, b)
 
 ##matrix32
+# f = False
+# for y in range(m):
+#     c1 = 0; c0 = 0
+#     for x in range(n):
+#         if mas[y][x] < 0:
+#             c1 += 1
+#         elif mas[y][x] > 0:
+#             c0 += 1
+#     if c1 == c0:
+#         f = True
+#         a = y
+# if f:
+#     print(a)
+# else:
+#     print("Bunday satr yo'q")
+
+# matrix33
+# f = False
+# for y in range(n):
+#     c1 = 0; c0 = 0; q=[]; q1 = 0
+#     for x in range(m):
+#         q.append(mas[x][y])
+#         if mas[x][y] < 0:
+#             c1 += 1
+#         elif mas[x][y] > 0:
+#             c0 += 1
+#     print(q)
+#     if c1 == c0:
+#         f = True
+#         a = y
+#         q1 = q
+# if f:
+#     print(a)
+#     print(q1)
+# else:
+#     print("Bunday ustun yo'q")
+
+# matrix34
 
 for y in range(m):
-    c1 = 0; c0 = 0
-    for x in range(n):
-        if mas[y][x] < 0:
-            c1 += 1
-        elif mas[y][x] > 0:
-            c0 += 1
-    print(c0, c1)
-for i in range(m):
-    
+    for x in
