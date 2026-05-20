@@ -6,7 +6,7 @@ mas = []
 for y in range(m):
     row = []
     for x in range(n):
-        row.append(random.randint(-9, 9))
+        row.append(random.randint(1, 9))
     mas.append(row)
 [print(row) for row in mas]
 print('**'*20)
@@ -675,5 +675,13 @@ print('**'*20)
 
 # matrix34
 
-# for y in range(m):
-#     for x in
+for y in range(m):
+    c = 0
+    for x in range(n):
+        if mas[y][x]%2==0:
+            c += 1
+    if c == n:
+        q = y
+    else:
+        q = 'z'
+if 
