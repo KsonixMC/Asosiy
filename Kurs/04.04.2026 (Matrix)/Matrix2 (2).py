@@ -675,5 +675,5 @@ print('**'*20)
 
 # matrix34
 
-for y in range(m):
-    for x in
+# for y in range(m):
+#     for x in
