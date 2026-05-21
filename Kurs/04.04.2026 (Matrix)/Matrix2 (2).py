@@ -2,11 +2,13 @@ import random
 
 m, n = list(map(int, input(f'm, n = ').split()))
 mas = []
-
+c = 0
 for y in range(m):
     row = []
     for x in range(n):
         row.append(random.randint(1, 9))
+        # row.append(c)
+        # c += 1
     mas.append(row)
 [print(row) for row in mas]
 print('**'*20)
@@ -675,13 +677,117 @@ print('**'*20)
 
 # matrix34
 
-for y in range(m):
-    c = 0
-    for x in range(n):
-        if mas[y][x]%2==0:
-            c += 1
-    if c == n:
-        q = y
-    else:
-        q = 'z'
-if 
+# q = "Bunday satr yo'q"
+# for y in range(m):
+#     c = 0
+#     for x in range(n):
+#         if mas[y][x]%2==0:
+#             c += 1
+#     if c == n:
+#         q = y
+# print(q)
+
+# matrix35
+
+# q = "Bunday ustun yo'q"
+#
+# for y in range(n):
+#     c = 0
+#     for x in range(m):
+#         if mas[x][y]%2==1:
+#             c += 1
+#     if c == m:
+#         q = y
+#         break
+# print(q)
+
+# matrix36
+# S = 0
+# for y in range(1, m):
+#     c = 0
+#     for x in range(n):
+#         if mas[y][x] == mas[0][x]:
+#             c += 1
+#     if c == n:
+#         S += 1
+# print(S)
+
+# matrix37
+
+# S = 0
+# for y in range(n):
+#     c = 0
+#     for x in range(m-1, -1, -1):
+#         if mas[x][y] == mas[x][-1]:
+#             c += 1
+#     if c == m:
+#         S += 1
+# print(S-1)
+
+# matrix38
+# S = 0
+# for i in range(m):
+#     f = True
+#     for q in range(i+1, m):
+#         if mas[i] == mas[q]:
+#             f = False
+#     if f:
+#         S += 1
+# print(S)
+
+# matrix39
+
+# mas1 = []
+# for y in range(n):
+#     row = []
+#     for x in range(m):
+#         row.append(mas[x][y])
+#     mas1.append(row)
+# [print(row) for row in mas1]
+#
+# S = 0
+# for i in range(m):
+#     f = True
+#     for q in range(i+1, m):
+#         if mas1[i] == mas1[q]:
+#             f = False
+#     if f:
+#         S += 1
+# print(S)
+
+# matrix40
+
+# maxv = float('-inf')
+# a = 0
+# for y in range(m):
+#     for x in range(n):
+#         if mas[y].count(mas[y][x]) > maxv:
+#             maxv = mas[y].count(mas[y][x])
+#             a = y
+#             b = maxv
+#             c = mas[y][x]
+# print(a, c, b)
+
+# matrix41
+
+# mas1 = []
+# for y in range(n):
+#     row = []
+#     for x in range(m):
+#         row.append(mas[x][y])
+#     mas1.append(row)
+# [print(row) for row in mas1]
+#
+# maxv = float('-inf')
+# a = 0
+# for y in range(m):
+#     for x in range(n):
+#         if mas1[y].count(mas1[y][x]) > maxv:
+#             maxv = mas1[y].count(mas1[y][x])
+#             a = y
+#             b = maxv
+#             c = mas1[y][x]
+# print(a, c, b)
+
+# matrix42
+
