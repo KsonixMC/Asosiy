@@ -12,4 +12,5 @@ if n >= 38:
     print(b)
 else:
     print(n)
+    print(n)
     
