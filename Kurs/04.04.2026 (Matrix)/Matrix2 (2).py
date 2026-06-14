@@ -7,8 +7,8 @@ c = 0
 for y in range(m):
     row = []
     for x in range(n):
-        row.append(int(input('a=')))
-        # row.append(random.randint(1, 9))
+        # row.append(int(input('a=')))
+        row.append(random.randint(1, 9))
         # row.append(c)
         # c += 1
     mas.append(row)
@@ -862,3 +862,10 @@ print('**'*20)
 
 # matrix46
 
+mas1 = []
+for y in range(n):
+    row = []
+    for x in range(m):
+        row.append(mas[x][y])
+    mas1.append(row)
+[print(row) for row in mas1]
