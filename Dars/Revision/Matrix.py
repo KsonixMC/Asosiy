@@ -15,7 +15,7 @@ mas = []
 for i in range(m):
     row = []
     for q in range(n):
-        row.append(random.randint(0,9))
+        row.append(random.randint(0, 9))
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -280,14 +280,115 @@ print('*'*20)
 
 # matrix48
 
-k1 = int(input('k1 = '))
-k2 = int(input('k2 = '))
+# k1 = int(input('k1 = '))
+# k2 = int(input('k2 = '))
+
+# K1 = []
+# K2 = []
+
+# for i in range(m):
+#     K1.append(mas[i][k1])
+#     K2.append(mas[i][k2])
+
+# mas[i][k1] = K2[i]
+# mas[i][k2] = K1[i]
+# [print(row) for row in mas]
+
+# matrix51
+
+# maxv = float('-inf')
+# minv = float('inf')
+
+# for i in range(m):
+#     for q in range(n):
+#         if maxv < mas[i][q]:
+#             maxv = mas[i][q]
+#             maxv_ind = i
+#             maxv_satr = mas[i]
+#         if minv > mas[i][q]:
+#             minv = mas[i][q]
+#             minv_ind = i
+#             minv_satr = mas[i]
+# print('maxv =>', maxv, maxv_ind)
+# print('minv =>', minv, minv_ind)
+
+# mas[maxv_ind] = minv_satr
+# mas[minv_ind] = maxv_satr
+# [print(row) for row in mas]
+
+# matrix54
+
+# a = []
+# for i in range(m):
+#     a.append(mas[i][-1])
+
+# z = 0
+
+# for i in range(n):
+#     c = 0
+#     b = []
+#     for q in range(m):
+#         b.append(mas[q][i])
+#         if mas[q][i] < 0:
+#             c += 1
+#     if c == m:
+#         g = i
+#         z = b
+
+# if z:
+#     print(z, a, g)
+#     for y in range(m):
+#         mas[y][-1] = z[y]
+#         mas[y][g] = a[y]
+# else:
+#     pass
+#     print(404)
+# [print(row) for row in mas]
+
+# matrix57
+
+# one = []
+# four = []
+
+# for i in range(m//2):
+#     one_row = []
+#     for q in range(n//2):
+#         one_row.append(mas[i][q])
+#     one.append(one_row)
+# print(one)
+
+# for i in range(m//2, m):
+#     four_row = []
+#     for q in range(n//2, n):
+#         four_row.append(mas[i][q])
+#     four.append(four_row)
+# print(four)
+# print('-'*20)
+
+# for i in range(m//2):
+#     for q in range(n//2):
+#         mas[i][q] = four[i][q]
+
+# a = 0
+# for i in range(m//2, m):
+#     b = 0
+#     for q in range(n//2, n):
+        
+#         mas[i][q] = one[a][b]
+#         b += 1
+#     a += 1
+# [print(row) for row in mas]
+
+# matrix60
 
 b = []
-for y in range(n):
-    row = []
-    for x in range(m):
-        row.append(mas[x][y])
-    b.append(row)
-[print(row) for row in b]
+for x in range(m):
+    b_row = []
+    for y in range(n):
+        b_row.append(mas[x][y])
+    b.append(b_row)
 
+
+for x in range(m):
+    mas[x] = b[x].reverse()
+[print(row) for row in mas]
