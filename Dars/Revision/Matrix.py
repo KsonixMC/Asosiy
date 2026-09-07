@@ -8,14 +8,15 @@ import random
 #         print('|')
 #     print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
 
-m = int(input("qator="))
-n = int(input('ustun='))
+m = int(input("qator(m)="))
+n = int(input('ustun(n)='))
 
 mas = []
 for i in range(m):
     row = []
     for q in range(n):
         row.append(random.randint(0,9))
+        # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
 # print2(mas)
@@ -209,12 +210,84 @@ print('*'*20)
 
 # matrix36
 
-a = mas[0]
-C = 0
-for x in range(1, m):
-    c = 0
-    for y in range(n):
-        if mas[x][y] == a[y]:
-            c += 1
-    if c == n:
-        C += 1
+# a = mas[0]
+# C = 0
+# for x in range(1, m):
+#     c = 0
+#     for y in range(n):
+#         if mas[x][y] == a[y]:
+#             c += 1
+#     if c == n:
+#         C += 1
+# print(C)
+
+
+# matrix39
+
+# b = []
+# for y in range(n):
+#     a = []
+#     for x in range(m):
+#         a.append(mas[x][y])
+#     b.append(a)
+# [print(row) for row in b]
+
+# for x in range(n):
+#     q = b[x]
+#     for y in range(m):
+#         for z in range(m):
+#             if
+
+# matrix42
+
+# C = 0
+# for x in range(m):
+#     c = 0
+#     for y in range(n-1):
+#         if mas[x][y] < mas[x][y+1]:
+#             c += 1
+#     if c == n-1:
+#         C += 1
+# print(C)
+
+# matrix45
+
+# b = []
+# for i in range(n):
+#     row = []
+#     for q in range(m):
+#         row.append(mas[q][i])
+#     b.append(row)
+# [print(row) for row in b]
+#
+# maxv = []
+# C = 0
+# for y in range(n):
+#     c1 = 0
+#     c2 = 0
+#     for x in range(m-1):
+#         if b[y][x] < b[y][x+1]:
+#             c1 += 1
+#         if b[y][x] > b[y][x+1]:
+#             c2 += 1
+#     if (c1 == m-1) or (c2 == m-1):
+#         C += 1
+#         maxv.append(max(b[y]))
+# if len(maxv) == 0:
+#     print(0)
+# else:
+#     print(max(maxv))
+
+# matrix48
+
+k1 = int(input('k1 = '))
+k2 = int(input('k2 = '))
+
+b = []
+for y in range(n):
+    row = []
+    for x in range(m):
+        row.append(mas[x][y])
+    b.append(row)
+[print(row) for row in b]
+
