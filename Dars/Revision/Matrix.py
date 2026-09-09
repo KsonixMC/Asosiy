@@ -15,7 +15,7 @@ mas = []
 for i in range(m):
     row = []
     for q in range(n):
-        row.append(random.randint(0, 9))
+        row.append(random.randint(10, 99))
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -380,15 +380,104 @@ print('*'*20)
 # [print(row) for row in mas]
 
 # matrix60
+#
+# b = []
+# for x in range(m):
+#     b_row = []
+#     for y in range(n):
+#         b_row.append(mas[x][y])
+#     b.append(b_row)
+#
+#
+# for x in range(m):
+#     b[x].reverse()
+#     mas[x] = b[x]
+# [print(row) for row in mas]
 
-b = []
-for x in range(m):
-    b_row = []
-    for y in range(n):
-        b_row.append(mas[x][y])
-    b.append(b_row)
+# matrix63
 
+# minv = float('inf')
+# for x in range(m):
+#     for y in range(n):
+#         if minv > mas[x][y]:
+#             minv = mas[x][y]
+#             a = x
+# mas.pop(a)
+#
+# [print(row) for row in mas]
 
-for x in range(m):
-    mas[x] = b[x].reverse()
-[print(row) for row in mas]
+# matrix66
+
+# a = 0
+# for y in range(n):
+#     c = 0
+#     for x in range(m):
+#         if mas[x][y] < 0:
+#             c += 1
+#     if c == m:
+#         a = y
+# if a:
+#     print(a)
+#     for i in range(m):
+#         mas[i].pop(a)
+#     [print(row) for row in mas]
+# else:
+#     pass
+
+# matrix69
+
+# k = int(input('k = '))
+#
+# for y in range(m):
+#     mas[y].insert(k+1, 1)
+# [print(row) for row in mas]
+
+# matrix72
+
+# a = ''
+# for y in range(n):
+#     c = 0
+#     for x in range(m):
+#         if mas[x][y] > 0:
+#             c += 1
+#     if c == m:
+#         a = y
+#         break
+# print(a)
+# if a > -1:
+#     for i in range(m):
+#         mas[i].insert(a+1, 1)
+# else:
+#     pass
+# [print(row) for row in mas]
+
+# matrix75
+
+# for x in range(m):
+#     for y in range(1, n-1):
+#         if mas[x][y-1] < mas[x][y] > mas[x][y+1]:
+#             mas[x][y] = 0
+# [print(row) for row in mas]
+
+# matrix78
+
+# a = []
+# for x in range(m):
+#     minv = float('inf')
+#     for y in range(n):
+#         if minv > mas[x][y]:
+#             minv = mas[x][y]
+#     a.append(minv)
+# print(a)
+#
+# for i in range(m):
+#     for q in range(m):
+#         if a[i] < a[q]:
+#             a[i], a[q] = a[q], a[i]
+#             mas[i], mas[q] = mas[q], mas[i]
+# print(a)
+# print('8'*20)
+# [print(row) for row in mas]
+
+# matrix81
+
