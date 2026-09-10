@@ -9,12 +9,11 @@ import random
 #     print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
 
 m = int(input("qator(m)="))
-n = int(input('ustun(n)='))
 
 mas = []
 for i in range(m):
     row = []
-    for q in range(n):
+    for q in range(m):
         row.append(random.randint(10, 99))
         # row.append(int(input()))
     mas.append(row)
@@ -480,4 +479,14 @@ print('*'*20)
 # [print(row) for row in mas]
 
 # matrix81
+
+# s = 0
+# a = m-1
+# for i in range(m):
+#     s += mas[i][a]
+#     # print(mas[i][a])
+#     a -= 1
+# print(s/m)
+
+# matrix84
 
