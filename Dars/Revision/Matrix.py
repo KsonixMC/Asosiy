@@ -8,13 +8,16 @@ import random
 #         print('|')
 #     print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
 
-m = int(input("qator(m)="))
-
+# m = int(input("qator(m)="))
+m = 6
+c = 10
 mas = []
 for i in range(m):
     row = []
     for q in range(m):
-        row.append(random.randint(0, 9))
+        # row.append(random.randint(0, 9))
+        row.append(i*10+q*1)
+        c += 1
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -495,10 +498,10 @@ print('*'*20)
 #     for q in range(i):
 #         s += mas[]
 
-for z in range(m):
-    s = 0
-    a = -1
-    for i in range(m):
-        s += mas[i][a]
-        a += 1
-        print(mas[i][a])
+for x in range(m):
+    for y in range(x+1):
+        print(mas[m-1-x+y][y])
+print("*")
+for x in range(1, m):
+    for y in range(0, m-x):
+        print(mas[y][y+x])
