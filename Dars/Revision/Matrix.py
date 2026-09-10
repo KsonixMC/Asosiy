@@ -8,16 +8,16 @@ import random
 #         print('|')
 #     print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
 
-# m = int(input("qator(m)="))
-m = 6
+m = int(input("qator(m)="))
+# m = 6
 c = 10
 mas = []
 for i in range(m):
     row = []
     for q in range(m):
-        # row.append(random.randint(0, 9))
-        row.append(i*10+q*1)
-        c += 1
+        row.append(random.randint(10, 99))
+        # row.append(i*10+q*1)
+        # c += 1
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -493,15 +493,76 @@ print('*'*20)
 
 # matrix84
 
-# for i in range(m-1, -1, -1):
+# for x in range(m):
+#     for y in range(x+1):
+#         print(mas[m-1-x+y][y], end=' ')
+# print("*")
+# for x in range(1, m):
+#     for y in range(0, m-x):
+#         print(mas[y][y+x], end=' ')
+
+# CorrectOne
+
+# for x in range(m):
 #     s = 0
-#     for q in range(i):
-#         s += mas[]
+#     a = 0
+#     for y in range(x+1):
+#         print(mas[x-y][m-1-y], end=' ')
+#         s += mas[x-y][m-1-y]
+#         a += 1
+#     print('|', s/a)
+# print("*")
+# for x in range(1, m):
+#     a = 0
+#     s = 0
+#     for y in range(m-x):
+#         print(mas[x+y][y], end=' ')
+#         s += mas[x+y][y]
+#         a += 1
+#     print('|', s/a)
+
+# matrix87
+
+# for x in range(m):
+#     maxv = float('-inf')
+#     for y in range(x+1):
+#         print(mas[x-y][y], end=' ')
+#         if maxv < mas[x-y][y]:
+#             maxv = mas[x-y][y]
+#     print('|', maxv)
+
+# for x in range(1, m):
+#     maxv = float('-inf')
+#     for y in range(m-x):
+#         print(mas[x+y][m-y-1], end=' ')
+#         if maxv < mas[x+y][m-y-1]:
+#             maxv = mas[x+y][m-y-1]
+#     print('|', maxv)
+
+# matrix90
+
+# for x in range(m):
+#     for y in range(m-x):
+#         mas[x+y][m-y-1] = 0
+#     print('|')
+# [print(row) for row in mas]
+
+# matrix93
+
+# for i in range((m+1)//2):
+#     for ung in range(i, m-i):
+#         # print(mas[ung][m-i-1], end=' ')
+#         mas[ung][m-1-i] = 0
+# [print(row) for row in mas]
+
+# matrix96
 
 for x in range(m):
     for y in range(x+1):
-        print(mas[m-1-x+y][y])
-print("*")
+        print(mas[x-y][y], end=' ')
+    print('|')
+
 for x in range(1, m):
-    for y in range(0, m-x):
-        print(mas[y][y+x])
+    for y in range(m-x):
+        print(mas[x+y][m-y-1], end=' ')
+    print('|')
