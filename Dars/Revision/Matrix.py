@@ -14,7 +14,7 @@ mas = []
 for i in range(m):
     row = []
     for q in range(m):
-        row.append(random.randint(10, 99))
+        row.append(random.randint(0, 9))
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -490,3 +490,15 @@ print('*'*20)
 
 # matrix84
 
+# for i in range(m-1, -1, -1):
+#     s = 0
+#     for q in range(i):
+#         s += mas[]
+
+for z in range(m):
+    s = 0
+    a = -1
+    for i in range(m):
+        s += mas[i][a]
+        a += 1
+        print(mas[i][a])
