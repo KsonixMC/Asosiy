@@ -15,9 +15,10 @@ mas = []
 for i in range(m):
     row = []
     for q in range(m):
-        row.append(random.randint(10, 99))
-        # row.append(i*10+q*1)
-        # c += 1
+        # row.append(random.randint(10, 99))
+        # row.append(i+q)
+        row.append(c)
+        c += 1
         # row.append(int(input()))
     mas.append(row)
 [print(row) for row in mas]
@@ -557,12 +558,22 @@ print('*'*20)
 
 # matrix96
 
-for x in range(m):
-    for y in range(x+1):
-        print(mas[x-y][y], end=' ')
-    print('|')
+# for i in range(m-1):
+#     for q in range(i+1, m):
+#         a = mas[i][q]
+#         b = mas[q][i]
+#         mas[i][q] = b
+#         mas[q][i] = a
+# [print(row) for row in mas]
 
-for x in range(1, m):
-    for y in range(m-x):
-        print(mas[x+y][m-y-1], end=' ')
-    print('|')
+# matrix99
+
+# for i in range(m-1):
+#     for q in range(i+1, m):
+#         mas[i][q], mas[q][i] = mas[q][i], mas[i][q]
+
+# for i in range(m//2):
+#     for q in range(m):
+#         mas[i][q], mas[-1-i][q] = mas[-1-i][q], mas[i][q]
+# [print(row) for row in mas]
+
