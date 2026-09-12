@@ -331,11 +331,191 @@
 
 # FunSimple20
 
-def TriangleP(k1, k2):
-    k3 = (k1**2 + k2**2)**.5
+##def TriangleP(k1, k2):
+##    k3 = (k1**2 + k2**2)**.5
+##
+##    return k3 + k1 + k2
+##
+##A = int(input('A = '))
+##B = int(input('B = '))
+##
+##print(TriangleP(A, B))
 
-    return k3 + k1 + k2
+##FunSimple21
 
-A = int(input('A = '))
-B = int(input('B = '))
+##def SumRange(a, b):
+##    if b < a:
+##        return 0
+##    else:
+##        S = 0
+##        for i in range(a, b+1):
+##            S += i
+##        return S
+##
+##A = int(input('A = '))
+##B = int(input('B = '))
+##C = int(input('C = '))
+##
+##print(SumRange(A, B))
+##print(SumRange(B, C))
 
+##FunSimple22
+
+##def Calc(A, B, Op):
+##    S = 0
+##    if Op == 1:
+##        S = A - B
+##    elif Op == 2:
+##        S = A * B
+##    elif Op == 3:
+##        S = A / B
+##    else:
+##        S = A + B
+##    return S
+##
+##a = float(input('A = '))
+##b = float(input('B = '))
+##
+##N1 = int(input('N1 = '))
+##N2 = int(input('N2 = '))
+##N3 = int(input('N3 = '))
+##N4 = int(input('N4 = '))
+##
+##print(Calc(a, b, N1))
+##print(Calc(a, b, N2))
+##print(Calc(a, b, N3))
+##print(Calc(a, b, N4))
+
+##FunSimple23
+
+##def Quarter(x, y):
+##    if x > 0 and y > 0:
+##        return 1
+##    elif x < 0 and y > 0:
+##        return 2
+##    elif x < 0 and y < 0:
+##        return 3
+##    elif x > 0 and y < 0:
+##        return 4
+##    else:
+##        return 'no quarter'
+##
+##px1 = int(input('px1 = '))
+##py1 = int(input('py1 = '))
+##px2 = int(input('px2 = '))
+##py2 = int(input('py2 = '))
+##px3 = int(input('px3 = '))
+##py3 = int(input('py3 = '))
+##px4 = int(input('px4 = '))
+##py4 = int(input('py4 = '))
+##
+##print(Quarter(px1, py1))
+##print(Quarter(px2, py2))
+##print(Quarter(px3, py3))
+##print(Quarter(px4, py4))
+
+##FunSimple24
+
+##def Even(k):
+##    if k%2 == 0:
+##        return True
+##    else:
+##        return False
+##
+##K1 = int(input('k1 = '))
+##K2 = int(input('k2 = '))
+##K3 = int(input('k3 = '))
+##print(Even(K1))
+##print(Even(K2))
+##print(Even(K3))
+
+##FunSimple25
+
+##def IsSquare(k):
+##    if k**.5 == int(k**.5):
+##        return True
+##    else:
+##        return False
+##
+##K1 = int(input('K1 = '))
+##K2 = int(input('K2 = '))
+##K3 = int(input('K3 = '))
+##
+##print(IsSquare(K1))
+##print(IsSquare(K2))
+##print(IsSquare(K3))
+
+##FunSimple26
+
+##def IsPower5(k):
+##    c = 0
+##    while k != 1 and k >= 5:
+##        k /= 5
+##        if k == int(k):
+##            c += 1
+##    
+##    if c == 0:
+##        return False
+##    else:
+##        return True
+##
+##K1 = int(input('K1 = '))
+##K2 = int(input('K2 = '))
+##K3 = int(input('K3 = '))
+##
+##print(IsPower5(K1))
+##print(IsPower5(K2))
+##print(IsPower5(K3))
+
+##FunSimple27
+
+##def IsPower(k, n):
+##    c = 0
+##    while k != 0 and k >= n:
+##        if k % n != 0:
+##            break
+##        k //= n
+##        c += 1
+##    if k == 1:
+##        return True
+##    else:
+##        return False
+##
+##N = int(input('N = '))
+##
+##K1 = int(input('K1 = '))
+##K2 = int(input('K2 = '))
+##K3 = int(input('K3 = '))
+##K4 = int(input('K4 = '))
+##K5 = int(input('K5 = '))
+##
+##print(IsPower(K1, N))
+##print(IsPower(K2, N))
+##print(IsPower(K3, N))
+##print(IsPower(K4, N))
+##print(IsPower(K5, N))
+
+##FunSimple28
+
+##def IsPrime(n):
+##    x = 2
+##    a = 0
+##    while x < n:
+##        if n%x == 0:
+##            a = False
+##            break
+##        else:
+##            a = True
+##        
+##        x += 1
+##    else:
+##        a = True
+##    return a
+##            
+##k = int(input('k = '))
+##
+##for i in range(k):
+##    a = int(input('a = '))
+##    print(IsPrime(a))
+
+##FunSimple29
