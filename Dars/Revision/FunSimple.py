@@ -743,3 +743,180 @@ import math
 
 # FunSimple41
 
+# def sin1(x, eps):
+#     S = 0
+#     a = 1
+#     member = 1.0
+#     ishora = 1
+#     while True:
+#         member = (x**a) / math.factorial(a)
+#         if abs(member) <= eps:
+#             break
+#         S += (member*ishora)
+#         a += 2
+#         ishora *= -1
+
+#     return S
+
+# print(sin1(float(input('x = ')), float(input('eps1 = '))))
+# print(sin1(float(input('x = ')), float(input('eps2 = '))))
+# print(sin1(float(input('x = ')), float(input('eps3 = '))))
+
+# FunSimple42
+
+# def sin1(x, eps):
+#     S = 0
+#     a = 0
+#     member = 1.0
+#     ishora = 1
+#     while True:
+#         member = (x**a) / math.factorial(a)
+#         if abs(member) <= eps:
+#             break
+#         S += (member*ishora)
+#         a += 2
+#         ishora *= -1
+
+#     return S
+
+# print(sin1(float(input('x = ')), float(input('eps1 = '))))
+# print(sin1(float(input('x = ')), float(input('eps2 = '))))
+# print(sin1(float(input('x = ')), float(input('eps3 = '))))
+
+# FunSimple43
+
+# def sin1(x, eps):
+#     S = 0
+#     a = 1
+#     member = 1.0
+#     ishora = 1
+#     while True:
+#         member = (x**a) / a
+#         if abs(member) <= eps:
+#             break
+#         S += (member*ishora)
+#         a += 1
+#         ishora *= -1
+
+#     return S
+
+# print(sin1(float(input('x = ')), float(input('eps1 = '))))
+# print(sin1(float(input('x = ')), float(input('eps2 = '))))
+# print(sin1(float(input('x = ')), float(input('eps3 = '))))
+
+# FunSimple44
+
+# def sin1(x, eps):
+#     S = 0
+#     a = 1
+#     member = 1.0
+#     ishora = 1
+#     while True:
+#         member = (x**a) / a
+#         if abs(member) <= eps:
+#             break
+#         S += (member*ishora)
+#         a += 2
+#         ishora *= -1
+
+#     return S
+
+# print(sin1(float(input('x = ')), float(input('eps1 = '))))
+# print(sin1(float(input('x = ')), float(input('eps2 = '))))
+# print(sin1(float(input('x = ')), float(input('eps3 = '))))
+
+# FunSimple45
+
+# Solve with tutor
+
+# FunSimple46
+
+# def EKUB(A, B):
+#     a = 2
+#     mas = [1]
+#     while a <= A and a <= B:
+#         if A % a == 0 and B % a == 0:
+#             mas.append(a)
+#             a += 1
+#         else:
+#             a += 1
+#             continue
+#     return mas[-1]
+
+# print(EKUB(int(input('A = ')), int(input('B = '))))
+# print(EKUB(int(input('A = ')), int(input('C = '))))
+# print(EKUB(int(input('A = ')), int(input('D = '))))
+
+# FunSimple47
+
+# def EKUB(A, B):
+#     a = 2
+#     mas = [1]
+#     while a <= A and a <= B:
+#         if A % a == 0 and B % a == 0:
+#             mas.append(a)
+#             a += 1
+#         else:
+#             a += 1
+#             continue
+#     return mas[-1]
+
+# def Frac1(a, b):
+#     o = EKUB(a, b)
+#     return f'{int(a/o)}/{int(b/o)}'
+
+# print(Frac1(int(input('Surat = ')), int(input('Maxraj = '))))
+# print(Frac1(int(input('Surat = ')), int(input('Maxraj = '))))
+# print(Frac1(int(input('Surat = ')), int(input('Maxraj = '))))
+
+# FunSimple48
+
+# def EKUB(A, B):
+#     a = 2
+#     mas = [1]
+#     while a <= A and a <= B:
+#         if A % a == 0 and B % a == 0:
+#             mas.append(a)
+#             a += 1
+#         else:
+#             a += 1
+#             continue
+#     return mas[-1]
+
+# def EKUK(A, B):
+#     S = A * B / EKUB(A, B)
+#     return S
+
+# print(EKUK(int(input('A = ')), int(input('B = '))))
+# print(EKUK(int(input('A = ')), int(input('C = '))))
+# print(EKUK(int(input('A = ')), int(input('D = '))))
+
+# FunSimple49
+
+# def EKUB(A, B):
+#     a = 2
+#     mas = [1]
+#     while a <= A and a <= B:
+#         if A % a == 0 and B % a == 0:
+#             mas.append(a)
+#             a += 1
+#         else:
+#             a += 1
+#             continue
+#     return mas[-1]
+
+# def EKUB3(A, B, C):
+#     S = EKUB(EKUB(A, B), C)
+#     return S
+
+# print(EKUB3(int(input('A = ')), int(input('B = ')), int(input('C = '))))
+# print(EKUB3(int(input('A = ')), int(input('C = ')), int(input('D = '))))
+# print(EKUB3(int(input('A = ')), int(input('B = ')), int(input('D = '))))
+
+# FunSimple50
+
+def TimeToHMS(T):
+    H = T//3600
+    M = T//60
+    S = T%60
+    Answer = f'Ustoz bilan FunSimple45ni ishlaaaa'
