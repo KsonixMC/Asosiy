@@ -1,3 +1,4 @@
+import math
 # FunSimple1
 
 # def PowerA3(a):
@@ -519,3 +520,226 @@
 ##    print(IsPrime(a))
 
 ##FunSimple29
+
+# def DigitCount(k):
+#     a = k.count('')
+#     return a-1
+# k1 = input('k1 = ')
+# k2 = input('k2 = ')
+# k3 = input('k3 = ')
+# k4 = input('k4 = ')
+# k5 = input('k5 = ')
+
+# print(DigitCount(k1))
+# print(DigitCount(k2))
+# print(DigitCount(k3))
+# print(DigitCount(k4))
+# print(DigitCount(k5))
+
+# FunSimple30
+
+# def DigitN(k, n):
+#     if len(k) < n:
+#         return -1
+#     else:
+#         return k[n-1]
+
+# n = int(input('n = '))
+# k1 = input('k1 = ')
+# k2 = input('k2 = ')
+# k3 = input('k3 = ')
+
+# print(DigitN(k1, n))
+# print(DigitN(k2, n))
+# print(DigitN(k3, n))
+
+# FunSimple31
+
+# def IsPalindrom(N):
+#     def DigitCount(k):
+#         a = k.count('')
+#         c = a-1
+#         return c
+#     c = len(N)
+
+#     Answer = '404'
+#     for i in range(c//2):
+#         if N[i] != N[-i-1]:
+#             Answer = False
+#             break
+#         else:
+#             Answer = True
+#     return Answer
+
+# K1 = input('K1 = ')
+# K2 = input('K2 = ')
+# K3 = input('K3 = ')
+# K4 = input('K4 = ')
+# K5 = input('K5 = ')
+
+# c = 0
+
+# mas = [K1, K2, K3, K4, K5]
+
+# for i in range(5):
+#     if IsPalindrom(mas[i]):
+#         c += 1
+#     else:
+#         continue
+
+# print(c)
+
+# FunSimple32
+
+# def DegToRad(d):
+#     return d*(3.1415/180)
+
+# print(DegToRad(float(input('D = '))))
+# print(DegToRad(float(input('D = '))))
+# print(DegToRad(float(input('D = '))))
+
+# FunSimple33
+
+# def RadToDeg(d):
+#     return d*(180/3.1415)
+
+# print(RadToDeg(float(input('R = '))))
+# print(RadToDeg(float(input('R = '))))
+# print(RadToDeg(float(input('R = '))))
+
+# FunSimple34
+
+# def Fact(N):
+#     a = 1
+#     S = 1
+#     while a != N+1:
+#         S *= a
+#         a += 1
+#     return S
+
+# print(Fact(int(input('N = '))))
+# print(Fact(int(input('N = '))))
+# print(Fact(int(input('N = '))))
+
+# FunSimple35
+
+# def Fact2(N):
+#     if N != 0:
+#         if N%2 == 0:
+#             a = 2
+#         else:
+#             a = 1
+#         b = N
+#         while b != a:
+#             b -= 2
+#             N *= b
+#         return N
+#     else:
+#         return 'None'
+
+# print(Fact2(int(input('N = '))))
+# print(Fact2(int(input('N = '))))
+# print(Fact2(int(input('N = '))))
+
+# FunSimple36
+
+# def Fib(N):
+    
+#     a = 0
+#     b = 1
+#     c = 1
+
+#     for i in range(1, N): 
+#         c = a + b
+#         a = b
+#         b = c
+
+#     return c
+
+# print(Fib(int(input('N = '))))
+
+# FunSimple37
+
+# def Power1(A, B):
+#     return A**B
+
+# for i in range(3):
+#     print(Power1(float(input(f'A{i+1} = ')), float(input(f'B{i+1} = '))))
+
+# FunSimple38
+
+# def Power2(A, N):
+#     if N > 0:
+#         S = 'N > 0'
+#         A1 = A
+#         for i in range(N-1):
+#             A *= A1
+#         return A
+
+#     if N == 0:
+#         S = 'N == 0'
+#         return 1.0
+
+#     if N < 0:
+#         S = 'N < 0'
+#         A1 = A
+#         for i in range(N*(-1)-1):
+#             A *= A1
+#         return 1/A
+
+# print(Power2(float(input('A = ')), int(input('M = '))))
+# print(Power2(float(input('A = ')), int(input('N = '))))
+# print(Power2(float(input('A = ')), int(input('K = '))))
+
+# FunSimple39
+
+# def Power1(A, N):
+#     return A**N
+
+# def Power2(A, N):
+#     if N > 0:
+#         A1 = A
+#         for i in range(int(N)-1):
+#             A *= A1
+#         return A
+
+#     if N == 0:
+#         return 1.0
+
+#     if N < 0:
+#         A1 = A
+#         for i in range(int(N*(-1))-1):
+#             A *= A1
+#         return 1/A
+
+# def Power3(A, N):
+#     if N % 1 > 0:
+#         return Power2(A, N//1)
+#     else:
+#         return Power1(A, N)
+
+# print(Power3(float(input('A = ')), float(input('N = '))))
+# print(Power3(float(input('A = ')), float(input('M = '))))
+# print(Power3(float(input('A = ')), float(input('K = '))))
+
+# FunSimple40
+
+# def Exp1(x, eps):
+#     S = 1
+#     a = 1
+#     member = 1.0
+#     while True:
+#         member = (x**a) / math.factorial(a)
+#         if abs(member) <= eps:
+#             break
+#         S += member
+#         a += 1
+
+#     return S
+
+# print(Exp1(float(input('x = ')), float(input('eps1 = '))))
+# print(Exp1(float(input('x = ')), float(input('eps2 = '))))
+# print(Exp1(float(input('x = ')), float(input('eps3 = '))))
+
+# FunSimple41
+
