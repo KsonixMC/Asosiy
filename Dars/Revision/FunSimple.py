@@ -951,7 +951,24 @@ import math
 
 # FunSimple52
 
-def IsLeapYear(Y):
-    if Y % 100 == 0 and Y % 400 == 0:
-        Answer = True
-    if Y
+# def IsLeapYear(Y):
+#     if Y % 100 == 0:
+#         if Y % 400 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     else:
+#         if Y % 4 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     return Answer
+#
+# print(IsLeapYear(int(input('Year = '))))
+# print(IsLeapYear(int(input('Year = '))))
+# print(IsLeapYear(int(input('Year = '))))
+# print(IsLeapYear(int(input('Year = '))))
+# print(IsLeapYear(int(input('Year = '))))
+
+# FunSimple53
+
