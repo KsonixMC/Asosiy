@@ -915,8 +915,43 @@ import math
 
 # FunSimple50
 
-def TimeToHMS(T):
-    H = T//3600
-    M = T//60
-    S = T%60
-    Answer = f'Ustoz bilan FunSimple45ni ishlaaaa'
+# def TimeToHMS(T):
+#     H = T//3600
+#     M = (T%3600)//60
+#     S = T%60
+#     if H < 10:
+#         h = f'0{H}'
+#     else:
+#         h = H
+#     if M < 10:
+#         m = f'0{M}'
+#     else:
+#         m = M
+#     if S < 10:
+#         s = f'0{S}'
+#     else:
+#         s = S
+#
+#     return f'{h}:{m}:{s}'
+#
+# print(TimeToHMS(int(input('T1 = '))))
+# print(TimeToHMS(int(input('T2 = '))))
+# print(TimeToHMS(int(input('T3= '))))
+
+# FunSimple51
+#
+# def IncTime(H, M, S):
+#     h = H*3600
+#     m = M*60
+#     s = S
+#
+#     return h+m+s
+#
+# print(IncTime(int(input('H = ')), int(input('M = ')), int(input('S = '))))
+
+# FunSimple52
+
+def IsLeapYear(Y):
+    if Y % 100 == 0 and Y % 400 == 0:
+        Answer = True
+    if Y
