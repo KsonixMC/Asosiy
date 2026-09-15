@@ -972,3 +972,142 @@ import math
 
 # FunSimple53
 
+# def IsLeapYear(Y):
+#     if Y % 100 == 0:
+#         if Y % 400 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     else:
+#         if Y % 4 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     return Answer
+#
+# def MonthDays(M, Y):
+#     if IsLeapYear(Y) == False:
+#         match M:
+#             case 1:
+#                 return 31
+#             case 2:
+#                 return 28
+#             case 3:
+#                 return 31
+#             case 4:
+#                 return 30
+#             case 5:
+#                 return 31
+#             case 6:
+#                 return 30
+#             case 7:
+#                 return 31
+#             case 8:
+#                 return 31
+#             case 9:
+#                 return 30
+#             case 10:
+#                 return 31
+#             case 11:
+#                 return 30
+#             case 12:
+#                 return 31
+#             case _:
+#                 return "out of year"
+#     else:
+#         match M:
+#             case 1:
+#                 return 31
+#             case 2:
+#                 return 29
+#             case 3:
+#                 return 31
+#             case 4:
+#                 return 30
+#             case 5:
+#                 return 31
+#             case 6:
+#                 return 30
+#             case 7:
+#                 return 31
+#             case 8:
+#                 return 31
+#             case 9:
+#                 return 30
+#             case 10:
+#                 return 31
+#             case 11:
+#                 return 30
+#             case 12:
+#                 return 31
+#             case _:
+#                 return "out of year"
+#
+# print(MonthDays(int(input("Month = ")), int(input('Year = '))))
+
+# def IsLeapYear(Y):
+
+#     if Y % 100 == 0:
+#         if Y % 400 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     else:
+#         if Y % 4 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     return Answer
+#
+#
+# def MonthDays(M, Y):
+#     if M < 1 or M > 12:
+#         return "out of year"
+#
+#     Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#
+#     if IsLeapYear(Y) and M == 2:
+#         return 29
+#     else:
+#         return Days[M - 1]
+#
+#
+# Y = int(input("Year = "))
+# M1 = int(input("M1 = "))
+# M2 = int(input("M2 = "))
+# M3 = int(input("M3 = "))
+#
+# print("M1 oyidagi kunlar soni =", MonthDays(M1, Y))
+# print("M2 oyidagi kunlar soni =", MonthDays(M2, Y))
+# print("M3 oyidagi kunlar soni =", MonthDays(M3, Y))
+
+# FunSimple54
+
+def IsLeapYear(Y):
+
+    if Y % 100 == 0:
+        if Y % 400 == 0:
+            Answer = True
+        else:
+            Answer = False
+    else:
+        if Y % 4 == 0:
+            Answer = True
+        else:
+            Answer = False
+    return Answer
+
+def MonthDays(M, Y):
+    if M < 1 or M > 12:
+        return "out of year"
+
+    Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+    if IsLeapYear(Y) and M == 2:
+        return 29
+    else:
+        return Days[M - 1]
+
+def PrevDate(D, M, Y):
+    if D == 1:
+        Answer = []
