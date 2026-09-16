@@ -1083,31 +1083,121 @@ import math
 
 # FunSimple54
 
-def IsLeapYear(Y):
+# def IsLeapYear(Y):
+#     if Y % 100 == 0:
+#         if Y % 400 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     else:
+#         if Y % 4 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     return Answer
 
-    if Y % 100 == 0:
-        if Y % 400 == 0:
-            Answer = True
-        else:
-            Answer = False
-    else:
-        if Y % 4 == 0:
-            Answer = True
-        else:
-            Answer = False
-    return Answer
+# def MonthDays(M, Y):
+#     if M < 1 or M > 12:
+#         return "out of year"
 
-def MonthDays(M, Y):
-    if M < 1 or M > 12:
-        return "out of year"
+#     Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-    Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+#     if IsLeapYear(Y) and M == 2:
+#         return 29
+#     else:
+#         return Days[M - 1]
 
-    if IsLeapYear(Y) and M == 2:
-        return 29
-    else:
-        return Days[M - 1]
+# def PrevDate(D, M, Y):
+#     if D > 1:
+#         NewD = D - 1
+#         NewM = M
+#         NewY = Y
+#     else:
+#         if M > 1:
+#             NewM = M - 1
+#             NewY = Y
+#         else:
+#             NewM = 12
+#             NewY = Y - 1
+#         NewD = MonthDays(NewM, NewY)
+#     return NewD, NewM, NewY
 
-def PrevDate(D, M, Y):
-    if D == 1:
-        Answer = []
+# # Birinchi sana
+# D1 = int(input("D1 = "))
+# M1 = int(input("M1 = "))
+# Y1 = int(input("Y1 = "))
+# print("1-sanadan oldingi sana:", PrevDate(D1, M1, Y1))
+
+# # Ikkinchi sana
+# D2 = int(input("D2 = "))
+# M2 = int(input("M2 = "))
+# Y2 = int(input("Y2 = "))
+# print("2-sanadan oldingi sana:", PrevDate(D2, M2, Y2))
+
+# # Uchinchi sana
+# D3 = int(input("D3 = "))
+# M3 = int(input("M3 = "))
+# Y3 = int(input("Y3 = "))
+# print("3-sanadan oldingi sana:", PrevDate(D3, M3, Y3))
+
+# FunSimple55
+
+# def IsLeapYear(Y):
+#     if Y % 100 == 0:
+#         if Y % 400 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     else:
+#         if Y % 4 == 0:
+#             Answer = True
+#         else:
+#             Answer = False
+#     return Answer
+
+# def MonthDays(M, Y):
+#     if M < 1 or M > 12:
+#         return "out of year"
+
+#     Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+#     if IsLeapYear(Y) and M == 2:
+#         return 29
+#     else:
+#         return Days[M - 1]
+
+# def NextDate(D, M, Y):
+#     if D < MonthDays(M, Y):
+#         NewD = D + 1
+#         NewM = M
+#         NewY = Y
+#     else:
+#         NewD = 1
+#         if M < 12:
+#             NewM = M + 1
+#             NewY = Y
+#         else:
+#             NewM = 1
+#             NewY = Y + 1
+#     return NewD, NewM, NewY
+
+# # Birinchi sana
+# D1 = int(input("D1 = "))
+# M1 = int(input("M1 = "))
+# Y1 = int(input("Y1 = "))
+# print("1-sanadan keyingi sana:", NextDate(D1, M1, Y1))
+
+# # Ikkinchi sana
+# D2 = int(input("D2 = "))
+# M2 = int(input("M2 = "))
+# Y2 = int(input("Y2 = "))
+# print("2-sanadan keyingi sana:", NextDate(D2, M2, Y2))
+
+# # Uchinchi sana
+# D3 = int(input("D3 = "))
+# M3 = int(input("M3 = "))
+# Y3 = int(input("Y3 = "))
+# print("3-sanadan keyingi sana:", NextDate(D3, M3, Y3))
+
+# FunSimple56
+
