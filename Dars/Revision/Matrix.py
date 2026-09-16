@@ -1,12 +1,26 @@
 import random
 # def print2(massive):
 #     print('_' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
-#
+
 #     for line in massive:
 #         print('|', end=' ')
 #         [print(x, end=' ') for x in line]
 #         print('|')
 #     print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
+
+
+def print2(massive):
+    # print('_' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
+
+    for line in massive:
+        print('', end=' ')
+        [print(x, end=' ') for x in line]
+        print('')
+    # print('-' * ((len(str(massive[0]))-str(massive[0]).count(','))+2))
+
+
+
+
 
 m = int(input("qator(m)="))
 # m = 6
@@ -21,8 +35,8 @@ for i in range(m):
         c += 1
         # row.append(int(input()))
     mas.append(row)
-[print(row) for row in mas]
-# print2(mas)
+# [print(row) for row in mas]
+print2(mas)
 
 print('*'*20)
 

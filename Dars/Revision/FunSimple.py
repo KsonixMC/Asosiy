@@ -1083,31 +1083,3 @@ import math
 
 # FunSimple54
 
-def IsLeapYear(Y):
-
-    if Y % 100 == 0:
-        if Y % 400 == 0:
-            Answer = True
-        else:
-            Answer = False
-    else:
-        if Y % 4 == 0:
-            Answer = True
-        else:
-            Answer = False
-    return Answer
-
-def MonthDays(M, Y):
-    if M < 1 or M > 12:
-        return "out of year"
-
-    Days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
-    if IsLeapYear(Y) and M == 2:
-        return 29
-    else:
-        return Days[M - 1]
-
-def PrevDate(D, M, Y):
-    if D == 1:
-        Answer = []
