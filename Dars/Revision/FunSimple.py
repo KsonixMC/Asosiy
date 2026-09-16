@@ -1201,3 +1201,93 @@ import math
 
 # FunSimple56
 
+# def Leng(x1, y1, x2, y2):
+#     a = abs(x1 - x2)
+#     b = abs(y1 - y2)
+#     c = (a**2+b**2)**.5
+#     return a, b, c
+
+# Ax, Ay = map(int, input().split())
+# Bx, By = map(int, input().split())
+# Cx, Cy = map(int, input().split())
+# Dx, Dy = map(int, input().split())
+
+# print(Leng(Ax, Ay, Bx, By))
+# print(Leng(Ax, Ay, Cx, Cy))
+# print(Leng(Ax, Ay, Dx, Dy))
+
+# FunSimple57
+
+# def Perim(xa,ya,xb,yb,xc,yc):
+#     c = ((abs(xa-xb))**2 + (abs(ya-yb))**2)**.5
+#     a = ((abs(xc-xb))**2 + (abs(yc-yb))**2)**.5
+#     b = ((abs(xc-xa))**2 + (abs(yc-ya))**2)**.5
+#     P = a + b + c
+#     return P
+
+# Xa, Ya = map(int, input().split())
+# Xb, Yb = map(int, input().split())
+# Xc, Yc = map(int, input().split())
+# Xd, Yd = map(int, input().split())
+
+# print(Perim(Xa, Ya, Xb, Yb, Xc, Yc))
+# print(Perim(Xa, Ya, Xb, Yb, Xd, Yd))
+# print(Perim(Xa, Ya, Xc, Yc, Xd, Yd))
+
+# FunSimple58
+
+# def Area(xa,ya,xb,yb,xc,yc):
+#     c = ((abs(xa-xb))**2 + (abs(ya-yb))**2)**.5
+#     a = ((abs(xc-xb))**2 + (abs(yc-yb))**2)**.5
+#     b = ((abs(xc-xa))**2 + (abs(yc-ya))**2)**.5
+#     s = (a + b + c)/2
+#     A = (s*(s-a)*(s-b)*(s-c))**.5
+#     return A
+
+# Ax, Ay = map(int, input().split())
+# Bx, By = map(int, input().split())
+# Cx, Cy = map(int, input().split())
+# Dx, Dy = map(int, input().split())
+
+# print(Area(Ax, Ay, Bx, By, Cx, Cy))
+# print(Area(Ax, Ay, Bx, By, Dx, Dy))
+# print(Area(Ax, Ay, Cx, Cy, Dx, Dy))
+
+# FunSimple59
+
+# def Dist(Xa, Ya, Xb, Yb, Xp, Yp):
+#     p = ((abs(Xa-Yb))**2 + (abs(Ya-Yb))**2)**.5
+#     a = ((abs(Xp-Xb))**2 + (abs(Yp-Yb))**2)**.5
+#     b = ((abs(Xp-Xa))**2 + (abs(Yp-Ya))**2)**.5
+#     s = (a + b + p)/2
+#     A = (s*(s-a)*(s-b)*(s-p))**.5
+#     D = 2*A/abs(a*b)
+#     return D
+
+# Xp, Yp = map(int, input().split())
+# Xa, Ya = map(int, input().split())
+# Xb, Yb = map(int, input().split())
+# Xc, Yc = map(int, input().split())
+
+# print(Dist(Xa, Ya, Xb, Yb, Xp, Yp))
+# print(Dist(Xb, Yb, Xc, Yc, Xp, Yp))
+# print(Dist(Xa, Ya, Xc, Yc, Xp, Yp))
+
+# FunSimple60
+
+def Heights(Xa, Ya, Xb, Yb, Xc, Yc):
+    c = ((abs(Xa-Xb))**2 + (abs(Ya-Yb))**2)**.5
+    a = ((abs(Xc-Xb))**2 + (abs(Yc-Yb))**2)**.5
+    b = ((abs(Xc-Xa))**2 + (abs(Yc-Ya))**2)**.5
+    s = (a + b + c)/2
+    A = (s*(s-a)*(s-b)*(s-c))**.5
+    D_c = 2*A/abs(c)
+    D_a = 2*A/abs(a)
+    D_b = 2*A/abs(b)
+    return D_a, D_b, D_c
+
+Xa, Ya = map(int, input().split())
+Xb, Yb = map(int, input().split())
+Xc, Yc = map(int, input().split())
+
+print(Heights(Xa, Ya, Xb, Yb, Xc, Yc))
