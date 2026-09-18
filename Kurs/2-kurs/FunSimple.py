@@ -1,4 +1,6 @@
 import math
+
+
 # FunSimple1
 
 # def PowerA3(a):
@@ -454,7 +456,7 @@ import math
 ##        k /= 5
 ##        if k == int(k):
 ##            c += 1
-##    
+##
 ##    if c == 0:
 ##        return False
 ##    else:
@@ -507,12 +509,12 @@ import math
 ##            break
 ##        else:
 ##            a = True
-##        
+##
 ##        x += 1
 ##    else:
 ##        a = True
 ##    return a
-##            
+##
 ##k = int(input('k = '))
 ##
 ##for i in range(k):
@@ -644,12 +646,12 @@ import math
 # FunSimple36
 
 # def Fib(N):
-    
+
 #     a = 0
 #     b = 1
 #     c = 1
 
-#     for i in range(1, N): 
+#     for i in range(1, N):
 #         c = a + b
 #         a = b
 #         b = c
@@ -1276,15 +1278,16 @@ import math
 # FunSimple60
 
 def Heights(Xa, Ya, Xb, Yb, Xc, Yc):
-    c = ((abs(Xa-Xb))**2 + (abs(Ya-Yb))**2)**.5
-    a = ((abs(Xc-Xb))**2 + (abs(Yc-Yb))**2)**.5
-    b = ((abs(Xc-Xa))**2 + (abs(Yc-Ya))**2)**.5
-    s = (a + b + c)/2
-    A = (s*(s-a)*(s-b)*(s-c))**.5
-    D_c = 2*A/abs(c)
-    D_a = 2*A/abs(a)
-    D_b = 2*A/abs(b)
+    c = ((abs(Xa - Xb)) ** 2 + (abs(Ya - Yb)) ** 2) ** .5
+    a = ((abs(Xc - Xb)) ** 2 + (abs(Yc - Yb)) ** 2) ** .5
+    b = ((abs(Xc - Xa)) ** 2 + (abs(Yc - Ya)) ** 2) ** .5
+    s = (a + b + c) / 2
+    A = (s * (s - a) * (s - b) * (s - c)) ** .5
+    D_c = 2 * A / abs(c)
+    D_a = 2 * A / abs(a)
+    D_b = 2 * A / abs(b)
     return D_a, D_b, D_c
+
 
 Xa, Ya = map(int, input().split())
 Xb, Yb = map(int, input().split())
