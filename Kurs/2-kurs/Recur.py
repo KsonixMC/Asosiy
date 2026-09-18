@@ -44,6 +44,16 @@
 # print(PowerN(int(input('X = ')), int(input('N = '))))
 
 # Recur4
-F1 = 1; F2 = 1
 
 def F(N):
+    if N < 3:
+        return 1
+    elif N > 2:
+        F1 = 1
+        F2 = 1
+        return F(N-2)+F(N-1)
+
+print(F(6))
+
+# Recur5
+
