@@ -46,8 +46,7 @@
 # Recur4
 
 # def F(N, c=0):
-#     print(c)
-#     if N < 3:
+#     if c < N:
 #         return 1
 #     elif N > 2:
 #         F1 = 1
@@ -61,3 +60,5 @@
 
 # Recur5
 
+def F(N, c=0):
+    if
