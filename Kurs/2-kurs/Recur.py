@@ -45,15 +45,19 @@
 
 # Recur4
 
-def F(N):
-    if N < 3:
-        return 1
-    elif N > 2:
-        F1 = 1
-        F2 = 1
-        return F(N-2)+F(N-1)
-
-print(F(6))
+# def F(N, c=0):
+#     print(c)
+#     if N < 3:
+#         return 1
+#     elif N > 2:
+#         F1 = 1
+#         F2 = 1
+#         return F(N-2, c+1)+F(N-1, c+1)
+#
+#
+# print(F(int(input('N1 = '))))
+# print(F(int(input('N2 = '))))
+# print(F(int(input('N3 = '))))
 
 # Recur5
 
