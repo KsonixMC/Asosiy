@@ -60,5 +60,17 @@
 
 # Recur5
 
-def F(N, c=0):
-    if
+# def fib2(N, f2=0, f1=1,c=0):
+#     if c==N:
+#         return f2
+#     f0 = f2+f1
+#     return fib2(N, f1, f0, c+1)
+#
+# N = int(input('N = '))
+#
+# print(fib2(N))
+
+# Recur6
+
+def combin1(N, K):
+    
