@@ -130,5 +130,41 @@
 
 # string19
 
+# A = 1 s == '123' or s == '-123'
+# A = 2 s == '123.123' or s == '-123.123'
+# A = 0 not int() and not float()
+
+
+# s = input()
+#
+# if (s.isdecimal() == True) or (s.startswith('-') and s[1:].isdecimal()==True) or (s.isdecimal() == True) or (s.startswith('+') and s[1:].isdecimal()==True ):
+#     print(1)
+#     exit()
+#
+# if s.count('.') == 1:
+#     m = s.split('.')
+#     m0 = m[0]
+#     m1 = m[1]
+#     if m0.startswith('-')==True and m0[1:].isdecimal()==True and m1.startswith('-')==False:
+#         print(2)
+#         exit()
+#     if m0.startswith('-')==False and m0.isdecimal()==True and m1.startswith('-')==False:
+#         print(2)
+#         exit()
+#     if m0.startswith('+')==True and m0[1:].isdecimal()==True and m1.startswith('+')==False:
+#         print(2)
+#         exit()
+#     if m0.startswith('+')==False and m0.isdecimal()==True and m1.startswith('+')==False:
+#         print(2)
+#         exit()
+# if (s.startswith('-') and s[1:].isdecimal()==False) or (s.startswith('+') and s[1:].isdecimal()==False):
+#     print(0)
+#     exit()
+# elif s.isdecimal() == False:
+#     print(0)
+#     exit()
+#
+
+# string20
+
 s = input()
-if
