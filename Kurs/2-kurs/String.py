@@ -167,4 +167,34 @@
 
 # string20
 
+# s = input()
+# for i in range(len(s)):
+#     print(s[i], end=' ')
+
+# string21
+
+# s = input()
+# for i in range(len(s)-1, -1, -1):
+#     print(s[i], end=' ')
+
+# string22
+
+# s = input()
+# S = 0
+# for i in range(len(s)):
+#     S += int(s[i])
+# print(S)
+
+
+# string23
+
 s = input()
+S = 0
+m = s
+for i in range(0, len(s), 2):
+    if m[1] == '+':
+        S += int(m[0])
+    # if m[1] == '-':
+    #     S -= int(m[0])
+    m = s[i:]
+print(S)
