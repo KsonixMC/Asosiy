@@ -131,4 +131,4 @@
 # string19
 
 s = input()
-if  
+if
