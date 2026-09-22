@@ -206,16 +206,48 @@
 
 # string23
 
-# '12+13+5+15+125+124'
+# s = '12+13-14+25-123'
+#
+# m =[]
+# amal = []
+# i = 0
+# while len(s) != 0:
+#     S = ''
+#     i = 0
+#     while i < len(s) and (s[i] != '+' and s[i] != '-'):
+#         S += s[i]
+#         i += 1
+#     if i < len(s) and (s[i] == '+' or s[i] == '-'):
+#         amal.append(s[i])
+#     m.append(S)
+#     if i < len(s):
+#         s = s[i+1:]
+#     else:
+#         s = ''
+# print(m)
+# print(amal)
+#
+# y = int(m[0])
+#
+# for i in range(len(amal)):
+#     if amal[i] == '+':
+#         y += int(m[i+1])
+#     if amal[i] == '-':
+#         y -= int(m[i+1])
+# print(y)
 
-s = '12+13+56+15+125+124'
-i = 0
-while len(s) > 0:
-    print(s)
-    S = ''
-    while s[i] != '+':
-        S += s[i]
-        i += 1
-    print(S)
-    print('len(S) =', len(S))
-    s = s[len(S)+1:]
+# string24
+
+# s = input('s = ')
+# print(str(int(s, 2)))
+
+# string25
+
+# s = input('s = ')
+# print(str(bin(int(s))))
+
+# string26
+
+n = int(input('n = '))
+s = input('s = ')
+
