@@ -188,13 +188,34 @@
 
 # string23
 
-s = input()
-S = 0
-m = s
-for i in range(0, len(s), 2):
-    if m[1] == '+':
-        S += int(m[0])
-    # if m[1] == '-':
-    #     S -= int(m[0])
-    m = s[i:]
-print(S)
+# s = input()
+# S = 0
+# # m = s
+# for i in range(0, len(s), 2):
+#     m = s[i:]
+#     print(m)
+#     if len(m) > 1:
+#         if m[1] == '+':
+#             S += int(m[0])
+#     else:
+#         S += int(s[-1])
+#     # if m[1] == '-':
+#     #     S -= int(m[0])
+#     # m = s[i+2:]
+# print(S)
+
+# string23
+
+# '12+13+5+15+125+124'
+
+s = '12+13+56+15+125+124'
+i = 0
+while len(s) > 0:
+    print(s)
+    S = ''
+    while s[i] != '+':
+        S += s[i]
+        i += 1
+    print(S)
+    print('len(S) =', len(S))
+    s = s[len(S)+1:]
