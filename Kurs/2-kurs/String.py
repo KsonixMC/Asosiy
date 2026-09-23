@@ -248,6 +248,189 @@
 
 # string26
 
-n = int(input('n = '))
-s = input('s = ')
+# n = int(input('n = '))
+# s = input('s = ')
+#
+# if len(s) < n:
+#     print(s.rjust(n, '.'))
+# if len(s) > n:
+#     c = 1
+#     while len(s) > n:
+#         s = s[c:]
+#     print(s)
 
+# string27
+
+# n1 = int(input('n1 = '))
+# n2 = int(input('n2 = '))
+#
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# s3 = s1[0:n1] + s2[-n2:]
+#
+# print(s3)
+
+# string28
+
+# c = input('c = ')
+# s1 = input('s1 = ')
+# s = ''
+#
+# for i in range(len(s1)):
+#     if s1[i] == c:
+#         s += c
+#     s += s1[i]
+# print(s)
+
+# string29
+
+# c = input('c = ')
+#
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+# s = ''
+# for i in range(len(s1)):
+#     if s1[i] == c:
+#         s += s2
+#     s += s1[i]
+# print(s)
+
+# string30
+
+# c = input('c = ')
+#
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# for i in range(len(s1)):
+#     if s1[i] == c:
+#         print(i, s1[i])
+#         s1 = s1[0:i+1] + s2 + s1[i+1:]
+#     else:
+#         pass
+# print(s1)
+
+# string31
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# if s2 in s1:
+#     print(True)
+# else:
+#     print(False)
+
+# string32
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# print(s1.count(s2))
+
+# string33
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# for i in range(len(s1)):
+#     if s2 in s1:
+#         s1 = s1[:s1.index(s2)]+s1[s1.index(s2)+len(s2):]
+#         break
+# print(s1)
+
+# string34
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# a = s1.rfind(s2)
+#
+# if a != -1:
+#     s1 = s1[:a] + s1[a+len(s2):]
+# else:
+#     pass
+#
+# print(s1)
+
+# string35
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+#
+# for i in range(s1.count(s2)):
+#     s1 = s1[:s1.index(s2)] + s1[s1.index(s2)+len(s2):]
+# print(s1)
+
+# string36
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+# s3 = input('s3 = ')
+#
+# a = s1.find(s2)
+#
+# s1 = s1[:a] + s3 + s1[a+len(s2):]
+# print(s1)
+
+# string37
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+# s3 = input('s3 = ')
+#
+# a = s1.rfind(s2)
+#
+# s1 = s1[:a] + s3 + s1[a+len(s2):]
+# print(s1)
+
+# string38
+
+# s1 = input('s1 = ')
+# s2 = input('s2 = ')
+# s3 = input('s3 = ')
+#
+# for i in range(s1.count(s2)):
+#     a = s1.find(s2)
+#     s1 = s1[:a] + s3 + s1[a+len(s2):]
+# print(s1)
+
+# string39
+
+# s = input('s = ')
+#
+# space1 = s.find(' ')
+# if space1 != -1 and s.count(' ') > 1:
+#     s = s[space1+1:]
+#     print(s[:s.find(' ')])
+# else:
+#     print("''")
+
+# string40
+
+# s = input('s = ')
+#
+# space1 = s.find(' ')
+# if space1 != -1 and s.count(' ') > 1:
+#     space2 = s.rfind(' ')
+#     print(s[space1+1:space2])
+# else:
+#     print("''")
+
+# string41
+
+# s = input('s = ')
+# print(s.count(' ')+1)
+
+# string42
+
+# s = input('s = ')
+# s = s.split(' ')
+#
+# for i in range(len(s)):
+#     startswith = s[i][0]
+#     endswith = s[i][-1]
+#     for q in range(i+1, len(s)):
+#         if
+
+"not finished"
