@@ -425,12 +425,125 @@
 # string42
 
 # s = input('s = ')
-# s = s.split(' ')
-#
-# for i in range(len(s)):
-#     startswith = s[i][0]
-#     endswith = s[i][-1]
-#     for q in range(i+1, len(s)):
-#         if
+# m = s.split(' ')
+# c = 0
+# for i in range(len(m)):
+#     starts = m[i][0]
+#     ends = m[i][-1]
+#     if starts == ends:
+#         c += 1
+# print(c)
 
-"not finished"
+# string43
+
+# s = input('s = ')
+# m = s.split(' ')
+# c = 0
+# for i in range(len(m)):
+#     if m[i].count('A') > 0:
+#         c += 1
+# print(c)
+
+# string44
+
+# s = input('s = ')
+# m = s.split(' ')
+# c = 0
+# for i in range(len(m)):
+#     if m[i].count('A') == 3:
+#         c += 1
+# print(c)
+
+# string45
+
+# s = input('s = ')
+# m = s.split(' ')
+# minv = float('inf')
+#
+# for i in range(len(m)):
+#     if minv > len(m[i]):
+#         minv = len(m[i])
+# print(minv)
+
+
+# string46
+
+# s = input('s = ')
+# m = s.split(' ')
+# maxv = float('-inf')
+#
+# for i in range(len(m)):
+#     if minv < len(m[i]):
+#         minv = len(m[i])
+# print(minv)
+
+# string47
+
+# s = input('s = ')
+# s = s.replace(' ', '.')
+# print(s)
+
+# string48
+
+# s = input('s = ')
+# m = s.split(' ')
+#
+# for i in range(len(m)):
+#     starts = m[i][0]
+#     print(starts)
+#     if m[i].count(starts) > 1:
+#         m[i] = m[i][0] + m[i][1:].replace(starts, '.')
+# print(m)
+
+# string49
+
+# s = input('s = ')
+# m = s.split(' ')
+#
+# for i in range(len(m)):
+#     ends = m[i][-1]
+#     print(ends)
+#     if m[i].count(ends) > 1:
+#         m[i] = m[i][:-1].replace(ends, '.') + m[i][-1]
+# print(m)
+
+# string50
+
+# s = input('s = ')
+# m = s.split(' ')
+# mas = []
+# for i in range(len(m)-1, -1, -1):
+#     if m[i] != '':
+#         mas.append(m[i])
+# M = ' '.join(mas)
+# print(M)
+
+
+# string51
+
+s = input('s = ')
+m = s.split(' ')
+mas = []
+for i in range(len(m)):
+    if m[i] != '':
+        mas.append(m[i])
+
+for i in range(len(mas)):
+    for q in range(i+1, len(mas)):
+        if ord(mas[i][0]) > ord(mas[q][0]):
+            print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
+            mas[i], mas[q] = mas[q], mas[i]
+            print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
+print(mas)
+
+
+
+# n = 10
+# m = [3, 9, 0, 2, 7, 3, 5, 1, 8, 4]
+#
+# for i in range(n):
+#     for q in range(i+1, n):
+#         if m[i] > m[q]:
+#             m[i], m[q] = m[q], m[i]
+# print(m)
+
