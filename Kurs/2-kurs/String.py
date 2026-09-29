@@ -521,29 +521,64 @@
 
 # string51
 
-s = input('s = ')
-m = s.split(' ')
-mas = []
-for i in range(len(m)):
-    if m[i] != '':
-        mas.append(m[i])
-
-for i in range(len(mas)):
-    for q in range(i+1, len(mas)):
-        if ord(mas[i][0]) > ord(mas[q][0]):
-            print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
-            mas[i], mas[q] = mas[q], mas[i]
-            print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
-print(mas)
-
-
-
-# n = 10
-# m = [3, 9, 0, 2, 7, 3, 5, 1, 8, 4]
+# s = input('s = ')
+# m = s.split(' ')
+# mas = []
+# for i in range(len(m)):
+#     if m[i] != '':
+#         mas.append(m[i])
 #
-# for i in range(n):
-#     for q in range(i+1, n):
-#         if m[i] > m[q]:
-#             m[i], m[q] = m[q], m[i]
-# print(m)
+# for i in range(len(mas)):
+#     for q in range(i+1, len(mas)):
+#         if ord(mas[i][0]) > ord(mas[q][0]):
+#             print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
+#             mas[i], mas[q] = mas[q], mas[i]
+#             print(mas, mas[i][0], ord(mas[i][0]), mas[q][0], ord(mas[q][0]))
+# print(mas)
 
+# string52
+
+# s = input('s = ')
+# m = s.split(' ')
+# for i in range(len(m)):
+#     m[i] = m[i].capitalize()
+# mas = ' '.join(m)
+# print(mas)
+
+# string53
+
+# s = input('s = ')
+# dec = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# cap = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+# low = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+#
+# c = 0
+# for i in range(len(s)):
+#     if (ord(s[i]) not in dec) and (s[i] not in cap) and (s[i] not in low) and (s[i] != ' '):
+#         c += 1
+# print(c)
+
+
+# string54
+
+# s = input('s = ')
+# cap = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+#
+# c = 0
+# for i in range(len(s)):
+#     if s[i] in cap:
+#         c += 1
+# print(c)
+
+# string55
+#
+# s = input('s = ')
+# m = s.split(' ')
+# maxv = float('-inf')
+# for i in range(len(m)):
+#     if maxv < len(m[i]):
+#         maxv = len(m[i])
+#         A = m[i]
+# print(maxv, A)
+
+# string56
