@@ -654,4 +654,4 @@ print(low)
 print(cap)
 for i in range(len(s)):
     if ord(s[i]) in low or s[i] in cap:
-        s[i] = 
+        s[i] =
