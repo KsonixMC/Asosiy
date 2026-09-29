@@ -650,8 +650,20 @@
 s = input('s = ')
 low = [i for i in range(ord('a'), ord('z')+1)]
 cap = [i for i in range(ord('A'), ord('Z')+1)]
-print(low)
-print(cap)
+s_new = ''
+# print(low)
+# print(cap)
 for i in range(len(s)):
-    if ord(s[i]) in low or s[i] in cap:
-        s[i] =
+    A = False
+    if s[i] == chr(low[-1]) or s[i] == chr(cap[-1]):
+        if s[i] == chr(low[-1]):
+            s_new += low[0]
+        if s[i] == chr(cap[-1]):
+            s_new += cap[0]
+    else:
+        if (ord(s[i]) in low) or (ord(s[i]) in cap):
+            s_new += chr(ord(s[i]) + 1)
+            A = True
+        if A == False:
+            s_new += s[i]
+print(s_new)
