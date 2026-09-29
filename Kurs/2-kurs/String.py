@@ -582,3 +582,76 @@
 # print(maxv, A)
 
 # string56
+
+# s =  input('s = ')
+# m = s.split(' ')
+# minv = float('inf')
+# for i in range(len(m)):
+#     if minv >= len(m[i]):
+#         minv = len(m[i])
+#         A = m[i]
+# print(minv, A)
+
+# string57
+
+# s = input('s = ')
+# m = s.split(' ')
+# mas = []
+# for i in range(len(m)):
+#     if m[i] != '':
+#         mas.append(m[i])
+# mas = ' '.join(mas)
+# print(mas)
+
+# string58
+
+# s = input('s = ')
+# slash = s.rfind(chr(92))
+# m = ''
+# i = 1
+# while s[slash+i] != '.':
+#     m += s[slash+i]
+#     i += 1
+# print(m)
+
+# string59
+#
+# s = input('s = ')
+# slash = s.rfind('.')
+# m = s[slash+1:]
+# print(m)
+
+# string60
+
+# s = input('s = ')
+# a = s.find(chr(92))
+# m = ''
+# i = 1
+# while s[a+i] != chr(92):
+#     m += s[a+i]
+#     i += 1
+# print(m)
+
+# string61
+#
+# s = input('s = ')
+#
+# if s.count(chr(92)) > 1:
+#     a = s.rfind(chr(92))
+#     print(a)
+#     b = s[:a].rfind(chr(92))
+#     print(b)
+#     print(s[b+1:a])
+# elif s.count(chr(92)) == 1:
+#     print(chr(92))
+
+# string62
+
+s = input('s = ')
+low = [i for i in range(ord('a'), ord('z')+1)]
+cap = [i for i in range(ord('A'), ord('Z')+1)]
+print(low)
+print(cap)
+for i in range(len(s)):
+    if ord(s[i]) in low or s[i] in cap:
+        s[i] = 
