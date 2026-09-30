@@ -30,4 +30,4 @@ for ch in matn:
             matn2 += chr(ord(ch) + k)
     else:
         matn2 += ch
-    print(matn, matn2)
+print(matn2)
