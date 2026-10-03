@@ -670,23 +670,109 @@
 
 # string63
 
-s = input('s = ')
-k = int(input('k = '))
-low = [i for i in range(ord('a'), ord('z')+1)]
-cap = [i for i in range(ord('A'), ord('Z')+1)]
-print(low)
-print(cap)
-s_new = ''
-for i in range(len(s)):
-    A = False
-    if ord(s[i]) >= low[-k]:
-        s_new += chr(low[0])
-    if ord(s[i]) >= cap[-k]:
-        s_new += chr(low[])
-    else:
-        if (ord(s[i]) in low) or (ord(s[i]) in cap):
-            s_new += chr(ord(s[i]) + k)
-            A = True
-        if A == False:
-            s_new += s[i]
-print(s_new)
+# s = input('s = ')
+# k = int(input('k = '))
+# matn2 = ''
+# for ch in s:
+#     if 65 <= ord(ch) <= 90:
+#         ch2 = (ord(ch) + k - 65) % 26 + 65
+#     elif 97 <= ord(ch) <= 122:
+#         ch2 = (ord(ch) + k - 97) % 26 + 97
+#     else:
+#         ch2 = ord(ch)
+#     matn2 += chr(ch2)
+#
+# print(matn2)
+
+# string64
+
+# s = input('s = ')
+# k = int(input('k = '))
+# matn2 = ''
+#
+# for ch in s:
+#     if 65 <= ord(ch) <= 90:
+#         ch2 = (ord(ch) - k - 65) % 26 + 65
+#     elif 97 <= ord(ch) <= 122:
+#         ch2 = (ord(ch) - k - 97) % 26 + 97
+#     else:
+#         ch2 = ord(ch)
+#     matn2 += chr(ch2)
+# print(matn2)
+
+# string65
+
+# s = input('s = ')
+# f = input('f = ')
+# k = abs(ord(f) - ord(s[0]))
+#
+# matn2 = ''
+#
+# for ch in s:
+#     if 65 <= ord(ch) <= 90:
+#         ch2 = (ord(ch) - k - 65) % 26 + 65
+#     elif 97 <= ord(ch) <= 122:
+#         ch2 = (ord(ch) - k - 97) % 26 + 97
+#     else:
+#         ch2 = ord(ch)
+#     matn2 += chr(ch2)
+# print(matn2)
+
+# string66
+
+# s = input('s = ')
+# j = [s[ch] for ch in range(0, len(s), 2)]
+# t = [s[ch] for ch in range(1, len(s), 2)]
+#
+# s2 = ''
+#
+# for i in range(len(j)):
+#     s2 += j[i]
+#
+# for i in range(len(t)-1, -1, -1):
+#     s2 += t[i]
+#
+# print(s2)
+#
+# string67
+
+# s = input('s = ')
+# if len(s)%2 == 0:
+#     lng = len(s)//2
+# else:
+#     lng = len(s)//2 + 1
+#
+# j = []
+# j.extend(s[:lng])
+# t = []
+# t.extend(s[lng:])
+# t2 = []
+# for i in range(len(t)-1, -1, -1):
+#     t2.append(t[i])
+# s2 = ''
+#
+# for i in range(len(s)//2):
+#     s2 += j[i]
+#     s2 += t2[i]
+# if len(s)%2==1:
+#     s2 += j[-1]
+# print(s2)
+
+# string68
+
+# s = input('s = ')
+#
+# f = True
+# m = []
+# for ch in s:
+#     if 97 <= ord(ch) <= 122:
+#         m.append(ord(ch))
+#
+# for i in range(len(m)-1):
+#     if m[i] > m[i+1]:
+#         f = False
+#         break
+# print(f)
+
+# string69
+
