@@ -219,7 +219,35 @@
 
 # t16
 
-f = open('File1.txt', 'r')
-s = f.readlines()
-a = ''
-for i in range(len(s)):
+# f = open('File1.txt', 'r')
+# s = []
+#
+# for line in f:
+#     if len(line) == 1:
+#         if ord(line[0]) == 10:
+#             continue
+#         else:
+#             s.append(line)
+#     else:
+#         s.append(line)
+# f.close()
+#
+# f = open('File1.txt', 'w')
+#
+# for i in range(len(s)):
+#     f.write(s[i])
+#
+
+# t17
+
+# f1 = open('File1.txt', 'r')
+# f2 = open('File2.txt', 'r')
+#
+# s1 = f1.readlines()
+# s2 = f2.readlines()
+# f1.close()
+# m = []
+# f1 = open('File1.txt', 'w')
+# for i in range(min(len(s1), len(s2))):
+#     f1.write(s1[i])
+#     f1.write(s2[i])
