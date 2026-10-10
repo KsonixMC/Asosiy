@@ -251,3 +251,45 @@
 # for i in range(min(len(s1), len(s2))):
 #     f1.write(s1[i])
 #     f1.write(s2[i])
+
+# t18
+
+# k = int(input('k = '))
+# f = open('File1.txt', 'r')
+# s = f.readlines()
+# f.close()
+# for i in range(len(s)):
+#     if len(s[i]) <= k:
+#         s[i] = '\n'
+#     else:
+#         s[i] = s[i][k:]
+# f = open('File1.txt', 'w')
+# for i in range(len(s)):
+#     f.write(s[i])
+
+# t19
+
+# f = open('File1.txt', 'r')
+# s = []
+#
+# for line in f:
+#     s.append(line.swapcase())
+# f.close()
+# f = open('File1.txt', 'w')
+# for i in range(len(s)):
+#     f.write(s[i])
+
+# t20
+
+f = open('File1.txt', 'r')
+s = f.readlines()
+
+for i in range(len(s)):
+    print(i)
+    m = s[i].split(' ')
+    mas = []
+    for q in range(len(m)):
+        if m[i] != '':
+            mas.append(m[i])
+    mas = ' '.join(mas)
+[print(i) for i in mas]

@@ -594,14 +594,14 @@
 
 # string57
 
-# s = input('s = ')
-# m = s.split(' ')
-# mas = []
-# for i in range(len(m)):
-#     if m[i] != '':
-#         mas.append(m[i])
-# mas = ' '.join(mas)
-# print(mas)
+s = input('s = ')
+m = s.split(' ')
+mas = []
+for i in range(len(m)):
+    if m[i] != '':
+        mas.append(m[i])
+mas = ' '.join(mas)
+print(mas)
 
 # string58
 
