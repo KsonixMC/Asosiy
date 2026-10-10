@@ -281,15 +281,49 @@
 
 # t20
 
+# f = open('File1.txt', 'r')
+# l = f.readlines()
+# S = []
+# for x in range(len(l)):
+#     s = l[x]
+#     m = s.split(' ')
+#     massive = []
+#     for i in range(len(m)):
+#         if m[i] != '':
+#             massive.append(m[i])
+#     mas = ' '.join(massive)
+#     S.append(mas)
+# f.close()
+# f = open('File1.txt', 'w')
+# for i in range(len(S)):
+#     f.write(S[i])
+
+
+# t21
+
+# f = open('File1.txt', 'r')
+# s = f.readlines()
+# f.close()
+# f = open('File1.txt', 'w')
+# for i in range(len(s)-3):
+#     f.write(s[i])
+
+# t22
+
+# k = int(input('k = '))
+# f = open('File1.txt', 'r')
+# s = f.readlines()
+# f.close()
+# f = open('File1.txt', 'w')
+# for i in range(len(s)-k):
+#     f.write(s[i])
+
+# t23
+
+k = int(input('k = '))
 f = open('File1.txt', 'r')
 s = f.readlines()
-
-for i in range(len(s)):
-    print(i)
-    m = s[i].split(' ')
-    mas = []
-    for q in range(len(m)):
-        if m[i] != '':
-            mas.append(m[i])
-    mas = ' '.join(mas)
-[print(i) for i in mas]
+f.close()
+f = open('File1.txt', 'w')
+for i in range(len(s)-k):
+    f.write(s[i])
