@@ -320,10 +320,23 @@
 
 # t23
 
-k = int(input('k = '))
-f = open('File1.txt', 'r')
-s = f.readlines()
-f.close()
-f = open('File1.txt', 'w')
-for i in range(len(s)-k):
-    f.write(s[i])
+# k = int(input('k = '))
+# f = open('File1.txt', 'r')
+# s = f.readlines()
+# f.close()
+# f = open('File2.txt', 'w')
+# for i in range(len(s)-k, len(s)):
+#     f.write(s[i])
+
+# t24
+
+# f = open('File1.txt', 'r')
+# c = 0
+# for line in f:
+#     if ord(line[0]) == 32:
+#         c += 1
+# print(c)
+
+# t25
+
+# k = int(input('k = '))
