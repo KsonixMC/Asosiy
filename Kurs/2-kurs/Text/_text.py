@@ -330,13 +330,8 @@
 
 # t24
 
-# f = open('File1.txt', 'r')
-# c = 0
-# for line in f:
-#     if ord(line[0]) == 32:
-#         c += 1
-# print(c)
+f = open('File1.txt', 'r')
 
-# t25
-
-# k = int(input('k = '))
+for line in f:
+    if len(line) == 1:
+        
