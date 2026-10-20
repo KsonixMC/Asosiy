@@ -334,4 +334,3 @@ f = open('File1.txt', 'r')
 
 for line in f:
     if len(line) == 1:
-        
