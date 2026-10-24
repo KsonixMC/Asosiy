@@ -47,12 +47,54 @@
 # for i in range(len(mas2)):
 #     print(mas2[i])
 
-n, q = map(int, input().split())
-a = set(map(int, input().split()))
+# n, q = map(int, input().split())
+# a = set(map(int, input().split()))
+#
+# for i in range(q):
+#     x = int(input())
+#     y = x + 1
+#     while y in a:
+#         y += 1
+#     print(y)
 
-for i in range(q):
-    x = int(input())
-    y = x + 1
-    while y in a:
-        y += 1
-    print(y)
+# n, q = map(int, input().split())
+# a = list(map(int, input().split()))
+# p = [0] * (n+1)
+# for i in range(len(a)):
+#     p[i+1] = p[i] + a[i]
+#
+# for i in range(q):
+#     l, r = map(int, input().split())
+#     print(p[r]-p[l-1])
+# #
+#
+# import sys
+#
+# input = sys.stdin.buffer.readline
+#
+# n, q = map(int, input().split())
+# a = list(map(int, input().split()))
+#
+# p = [0] * (n + 1)
+#
+# for i in range(n):
+#     p[i + 1] = p[i] + a[i]
+#
+# for _ in range(q):
+#     l, r = map(int, input().split())
+#     print(p[r] - p[l - 1])
+
+# 4
+
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+maxv = float('-inf')
+for i in range(n-k+1):
+    s = 0
+    for q in range(k):
+        s += a[q]
+    s /= k
+    if maxv < s:
+        maxv = s
+        ind = i
+print(maxv)
