@@ -85,16 +85,33 @@
 #     print(p[r] - p[l - 1])
 
 # 4
+#
+# n, k = map(int, input().split())
+# a = list(map(int, input().split()))
+# maxv = float('-inf')
+# for i in range(n-k+1):
+#     s = 0
+#     for q in range(k):
+#         s += a[q]
+#     s /= k
+#     if maxv < s:
+#         maxv = s
+#         ind = i
+# print(maxv)
 
-n, k = map(int, input().split())
-a = list(map(int, input().split()))
-maxv = float('-inf')
-for i in range(n-k+1):
-    s = 0
-    for q in range(k):
-        s += a[q]
-    s /= k
-    if maxv < s:
-        maxv = s
-        ind = i
-print(maxv)
+
+
+# A0036
+# n, q = map(int, input().split())
+# a = list(map(int, input().split()))
+# for i in range(q):
+#     t, l, r, x = map(int, input().split())
+#     if t == 1:
+#         for q in range(l-1, r):
+#             a[q] += x
+#     if t == 2:
+#         for q in range(l-1, r):
+#             a[q] = x
+# print(*a)
+
+
