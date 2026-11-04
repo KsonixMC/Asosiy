@@ -115,3 +115,44 @@
 # print(*a)
 
 
+# A+B R085A
+
+# a,b = map(str, input().split())
+# print(a+b)
+
+
+# R078A
+
+# n = input()
+# sh1 = False
+# if len(n)%2 == 1:
+#     sh1 = True
+# for i in range(len(n)):
+#     sh2 = True
+#     if int(n[i])%2 != 1:
+#         sh2 = False
+#         break
+# if sh1 == sh2:
+#     print('YES')
+# else:
+#     print('NO')
+
+# M045A
+#
+# n = input()
+# l = n.find('1')
+#
+# if l != -1 and l != len(n)-1:
+#     if n[l+1] == '3' and n[l+2] == '3':
+#         print('omadsiz chipta')
+#     else:
+#         print('omadli chipta')
+# else:
+#     print('omadli chipta')
+
+# R005H
+
+a, b = map(str, input().split())
+c = int(a, 2)
+d = int(b, 2)
+print(c*d)
