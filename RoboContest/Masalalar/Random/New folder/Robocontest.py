@@ -152,7 +152,35 @@
 
 # R005H
 
-a, b = map(str, input().split())
-c = int(a, 2)
-d = int(b, 2)
-print(c*d)
+# a, b = map(str, input().split())
+# c = int(a, 2)
+# d = int(b, 2)
+# print(c*d)
+
+# M001E
+
+# n = int(input())
+# a = list(map(int, input().split()))
+# c = 0
+# for i in range(n):
+#     for j in range(i+1, n):
+#         if a[i] > 2*a[j]:
+#             c += 1
+# print(c)
+
+# R005G
+
+k, n = map(int, input().split())
+
+
+p = ((k-2)*n**2 - (k-4)*n)/2
+print(int(p))
+
+# 1 5 12 22 35
+
+
+# 1 7 18
+#
+# 7 + 7-1 + 7-2 = 18
+# 18 + 18-7 + 7-2 = 34
+
